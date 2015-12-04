@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"  standalone="yes"?>
+<resources>
+    
+    <!-- public -->
+    <string name="app_name">Test</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    
+    <string name="item_with_name_x_count">%s X %d</string>
+    <string name="left_time_str_format">剩余时间:%02d:%02d</string>
+    
+    <string name="txt_out_attack">外功</string>
+    <string name="txt_in_attack">内攻</string>
+    <string name="txt_out_defend">外功</string>
+    <string name="txt_in_defend">内攻</string>
+    <string name="txt_def_crit">韧性</string>
+    <string name="txt_crit">暴击</string>
+    <string name="txt_hp">生命</string>
+    
+    
+    <!-- 新手战斗 -->
+    <string name="assistant_say1">欢迎掌门来到格斗无双，首先根据图标提示熟悉战斗技巧。\n\n\n     点击屏幕继续！</string>
+
+    <string name="assistant_say2">实践重于理论，老毒物乃当世五绝之一，就以他为假想敌练习吧。\n\n\n     点击屏幕继续！</string>
+    <string name="tip_move">点击移动</string>
+    <string name="tip_attack">普通攻击</string>
+    <string name="tip_avoid">点击闪避</string>
+    <string name="tip_skill">点击技能</string>
+    
+    <string name="tip_cannot_open_by_task">完成%d级主线任务开启该功能！</string>
+    <string name="tip_cannot_open_by_level">主角达到%d级开启该功能！</string>
+    <string name="tip_default_cannot_open">该功能还未开启！</string>
+    
+    <!-- Community -->
+    <string name="assistant_say_hello">欢迎正式进入格斗无双！现在掌门可以点击箭头所指图标来接受任务，开始您的传奇江湖之旅！\n\n  点击右方NPC头像接取任务！</string>
+    
+    <!-- vip -->
+    <string name="vip_need_gold">您再充值$%d$黄金将升级为更尊贵的$VIP%d$级会员</string>
+    <string name="max_vip">$$$您已达到最高VIP12级会员$</string>
+    <string name="vip_gift_title">$VIP%d$成长礼包</string>
+    <string name="btn_get_txt">领取</string>
+    <string name="btn_has_got_txt">已领取</string>
+    <string name="tip_vip_has_got">您的vip礼包已领取！</string>
+    <string name="tip_can_not_get">您的vip等级不足，目前无法领取！</string>
+    
+    <!-- 世界BOSS -->
+    <string name="txt_timer_title">复活倒计时</string>
+    <string name="world_boss_name">世界BOSS$泰斗$</string>
+    <string name="cur_player_cnt">当前人数:%d</string>
+    <string name="tip_no_gold_to_revive_txt">黄金不足，不能立即复活！</string>
+    <string name="btn_revive_txt">立即复活</string>
+    <string name="tip_cost_gold_revive">每次消耗$10黄金$自动复活</string>
+    <string name="world_boss_time_counter_format">倒计时:%02d:%02d:%02d</string>
+    <string name="tip_world_boss_over">世界BOSS活动已结束！</string>
+    
+    <!-- 强化 -->
+    <string name="tip_can_not_inset_diamond">装备品质不够，进阶后再来吧！</string>
+    <string name="tip_not_has_slot">没有可以镶嵌的孔位了！</string>
+    <string name="tip_not_has_diamond">装备没有镶嵌宝石！</string>
+    <string name="tip_not_has_stone">您的打孔石不足，是否购买?</string>
+    <string name="dialog_open_slot_confirm">是否要消耗%d个打孔石为装备开孔？</string>
+    <string name="tip_unload_btn">拆卸</string>
+    <string name="tip_inset_btn">镶嵌</string>
+    <string name="user_stone_cnt">拥有打孔石:%d</string>
+    <string name="tip_now_has_gem">您的%s不足，是否购买？</string>
+    <string name="tip_now_has_synthesis">您的合成符不足，是否购买?</string>
+    <string name="dialog_once_uninset_confirm">是否卸下全部的宝石？</string>
+    
+    <!-- 通知 -->
+    <string name="dialog_notice_title">通知</string>
+    <string name="dialog_notice_ok">查看</string>
+    <string name="dialog_notice_cancel">忽略</string>
+    <string name="notice_msg_bodyguard">在运镖过程中您遇到了%d攻击，赶快去查看吧！</string>
+    <string name="notice_msg_sport">在竞技场中有%d个人对你发起了挑战，赶快去查看吧！</string>
+    <string name="notice_msg_worldboss">世界BOSS活动已经结束，赶快到领奖平台去领奖吧！</string>
+    <string name="notice_msg_bodyguard_award">运镖已经完成了，领取你的奖励吧！</string>
+    <string name="notice_msg_sport_award">竞技场奖励！</string>
+    
+    <!-- Box -->
+    <string name="tip_no_box">您没有宝箱了，无法开启！</string>
+    <string name="dialog_no_key">您的%s不足，是否购买？</string>
+    
+    <!-- Rank -->
+    <string name="title_rank">排行榜</string>
+    <string name="my_rank_default">我的排名: $100+$</string>
+    <string name="level_rank">等级排行</string>
+    <string name="battle_rank">战力排行</string>
+    <string name="recharge_rank">周充值排行</string>
+    <string name="rank_num">排名</string>
+    <string name="rank_name">名称</string>
+    <string name="rank_role">职业</string>
+    <string name="rank_level">等级</string>
+    <string name="rank_battle">战斗力</string>
+    <string name="rank_recharge">周充值</string>
+    
+    
+    <!-- 活动 -->
+    <string name="lbl_activity_finish">活动己结束！</string>
+    <string name="lbl_activity_not_start">活动还未开始！</string>
+    <string name="lbl_activity_date_formate">%d年%d月%d日-%d年%d月%d日</string>
+    <string name="lbl_activity_timer_format">活动于%02d:%02d:%02d后结束</string>
+    <string name="lbl_activity_will_start_format">活动于%02d:%02d:%02d后开始</string>
+    <string name="tip_activity_lv_limit">你的等级不够！</string>
+    
+</resources>

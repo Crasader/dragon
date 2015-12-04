@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- 被2012 () 使用XMLSpy v编辑的 (http://www.altova.com) by -->
+<!-- ID:伙伴ID resourceID:资源ID name:名字 need_yxb="10000" need_gold="0" need_prestige="1000" profession:职业 partner_fac:伙伴系数 quart:品质 aptitudu_fac:资质系数 desc:描述
+	 relate_partner:缘伙伴  skill:缘技能 effect_type:影响类型(1普通伤害 2弟子血量 3弟子内攻	4弟子内防 5弟子外攻	6弟子外防 7弟子韧性 8弟子暴击 9促发概率	10技能伤害) effect_value:影响的值 desc:描述
+talent:天赋，代号表示如下
+1	使敌人内攻减少XX%$，
+2	使敌人外攻减少XX%$，
+3	使敌人内防减少XX%$，
+4	使敌人外防减少XX%$，
+5	使敌人生命上限减少XX%$，
+6	关卡中经验收益加成XX%$，
+7	关卡中银两收益加成XX%$，
+8	增加掌门体力上限xx%$
+9	增加掌门怒气上限xx%$
+10	使掌门有xx%$概率秒杀敌人
+
+talent_value 天赋具体的值，单位是%$
+-->
+<PARTNER_CONF>
+	<PARTNER_BATTLE>
+		<PARTNER_VER partner_list="1001, 1002, 1003" desc="VERSION1"/>
+	</PARTNER_BATTLE>
+	<PARTNER ID="1001" resourceID="2026" aiID="60" item_id="60001" name="芷若" need_yxb="0" need_gold="0" need_prestige="0" friend_val="0" profession="3" partner_fac="1.1" quarty="4" talent="7" talent_value="1" aptitude_fac="0.05" HP="2000" inAtt="405" outAtt="405" inDef="275" outDef="275" skillID="50012"/>
+	<PARTNER ID="1002" resourceID="2017" aiID="48" item_id="60002" name="萧大王" need_yxb="0" need_gold="0" need_prestige="0" friend_val="0" profession="2" partner_fac="1.65" quarty="5" talent="2" talent_value="0.1" aptitude_fac="0.06" HP="3200" inAtt="495" outAtt="495" inDef="400" outDef="400" skillID="50013"/>
+	<PARTNER ID="1003" resourceID="2029" aiID="74" item_id="60003" name="灵儿" need_yxb="0" need_gold="0" need_prestige="10" friend_val="1" profession="1" partner_fac="1" quarty="2" talent="1" talent_value="0.01" aptitude_fac="0.03" HP="1500" inAtt="198" outAtt="198" inDef="150" outDef="150" skillID="50001"/>
+	<PARTNER ID="1004" resourceID="2030" aiID="75" item_id="60004" name="岳师妹" need_yxb="0" need_gold="0" need_prestige="1000" friend_val="2" profession="1" partner_fac="1.03" quarty="2" talent="8" talent_value="0.025" aptitude_fac="0.03" HP="1500" inAtt="252" outAtt="252" inDef="170" outDef="170" skillID="50002"/>
+	<PARTNER ID="1005" resourceID="2028" aiID="72" item_id="60005" name="三通" need_yxb="0" need_gold="0" need_prestige="5000" friend_val="3" profession="3" partner_fac="1.08" quarty="2" talent="7" talent_value="0.1" aptitude_fac="0.03" HP="1500" inAtt="225" outAtt="225" inDef="190" outDef="190" skillID="50003"/>
+	<PARTNER ID="1006" resourceID="2025" aiID="55" item_id="60006" name="李道长" need_yxb="0" need_gold="0" need_prestige="10000" friend_val="6" profession="3" partner_fac="1.15" quarty="3" talent="6" talent_value="0.2" aptitude_fac="0.04" HP="2000" inAtt="288" outAtt="288" inDef="210" outDef="210" skillID="50004"/>
+	<PARTNER ID="1007" resourceID="2034" aiID="64" item_id="60007" name="小王爷" need_yxb="0" need_gold="0" need_prestige="20000" friend_val="10" profession="2" partner_fac="1.18" quarty="3" talent="7" talent_value="0.5" aptitude_fac="0.04" HP="2000" inAtt="360" outAtt="360" inDef="230" outDef="230" skillID="50005"/>
+	<PARTNER ID="1008" resourceID="2009" aiID="53" item_id="60008" name="达尔巴克" need_yxb="0" need_gold="0" need_prestige="30000" friend_val="20" profession="1" partner_fac="1.21" quarty="3" talent="8" talent_value="0.1" aptitude_fac="0.04" HP="2000" inAtt="315" outAtt="315" inDef="250" outDef="250" skillID="50006"/>
+	<PARTNER ID="1009" resourceID="2024" aiID="56" item_id="60009" name="公孙谷主" need_yxb="0" need_gold="0" need_prestige="40000" friend_val="35" profession="3" partner_fac="1.25" quarty="3" talent="9" talent_value="0.1" aptitude_fac="0.04" HP="2000" inAtt="405" outAtt="405" inDef="270" outDef="270" skillID="50007"/>
+	<PARTNER ID="1010" resourceID="2008" aiID="46" item_id="60010" name="法王" need_yxb="0" need_gold="0" need_prestige="60000" friend_val="70" profession="1" partner_fac="1.4" quarty="4" talent="10" talent_value="0.004" aptitude_fac="0.05" HP="2500" inAtt="360" outAtt="360" inDef="290" outDef="290" skillID="50008"/>
+	<PARTNER ID="1011" resourceID="2014" aiID="52" item_id="60011" name="老毒物" need_yxb="0" need_gold="0" need_prestige="100000" friend_val="150" profession="2" partner_fac="1.43" quarty="4" talent="1" talent_value="0.06" aptitude_fac="0.05" HP="2500" inAtt="450" outAtt="450" inDef="310" outDef="310" skillID="50009"/>
+	<PARTNER ID="1012" resourceID="2016" aiID="51" item_id="60012" name="峨眉掌门" need_yxb="0" need_gold="0" need_prestige="150000" friend_val="500" profession="2" partner_fac="1.48" quarty="4" talent="3" talent_value="0.05" aptitude_fac="0.05" HP="2500" inAtt="270" outAtt="270" inDef="330" outDef="330" skillID="50010"/>
+	<PARTNER ID="1013" resourceID="2020" aiID="57" item_id="60013" name="任教主" need_yxb="0" need_gold="0" need_prestige="300000" friend_val="2000" profession="2" partner_fac="1.53" quarty="4" talent="4" talent_value="0.05" aptitude_fac="0.05" HP="2500" inAtt="630" outAtt="630" inDef="350" outDef="350" skillID="50011"/>
+	<PARTNER ID="1014" resourceID="2018" aiID="47" item_id="60014" name="段和誉" need_yxb="0" need_gold="0" need_prestige="600000" friend_val="4000" profession="1" partner_fac="1.7" quarty="5" talent="3" talent_value="0.1" aptitude_fac="0.06" HP="3000" inAtt="540" outAtt="540" inDef="370" outDef="370" skillID="50014"/>
+	<PARTNER ID="1015" resourceID="2019" aiID="49" item_id="60015" name="虚小竹" need_yxb="0" need_gold="0" need_prestige="900000" friend_val="8000" profession="2" partner_fac="1.75" quarty="5" talent="4" talent_value="0.1" aptitude_fac="0.06" HP="3000" inAtt="720" outAtt="720" inDef="390" outDef="390" skillID="50015"/>
+	<PARTNER ID="1016" resourceID="2036" aiID="66" item_id="60016" name="郭大侠" need_yxb="0" need_gold="0" need_prestige="1500000" friend_val="16000" profession="2" partner_fac="1.8" quarty="5" talent="1" talent_value="0.1" aptitude_fac="0.06" HP="3000" inAtt="585" outAtt="585" inDef="410" outDef="410" skillID="50016"/>
+	<PARTNER ID="1017" resourceID="2038" aiID="68" item_id="60017" name="龙姑娘" need_yxb="0" need_gold="0" need_prestige="2500000" friend_val="24000" profession="1" partner_fac="1.85" quarty="5" talent="7" talent_value="2" aptitude_fac="0.06" HP="3000" inAtt="765" outAtt="765" inDef="430" outDef="430" skillID="50017"/>
+	<PARTNER ID="1018" resourceID="2010" aiID="50" item_id="60018" name="东方姑娘" need_yxb="0" need_gold="0" need_prestige="5000000" friend_val="40000" profession="1" partner_fac="1.9" quarty="5" talent="9" talent_value="0.6" aptitude_fac="0.06" HP="3000" inAtt="810" outAtt="810" inDef="450" outDef="450" skillID="50018"/>
+</PARTNER_CONF>

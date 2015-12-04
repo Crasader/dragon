@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- 被2012 () 使用XMLSpy v编辑的 (http://www.altova.com) by -->
+<FORCE>
+	<FORCE_CONF id="1" forceExp="180" life="78" outAttack="6" outDef="3" inAttack="6" inDef="3"/>
+	<FORCE_CONF id="2" forceExp="240" life="81" outAttack="6" outDef="3" inAttack="6" inDef="3"/>
+	<FORCE_CONF id="3" forceExp="300" life="83" outAttack="6" outDef="5" inAttack="6" inDef="5"/>
+	<FORCE_CONF id="4" forceExp="360" life="87" outAttack="6" outDef="5" inAttack="6" inDef="5"/>
+	<FORCE_CONF id="5" forceExp="420" life="91" outAttack="7" outDef="5" inAttack="7" inDef="5"/>
+	<FORCE_CONF id="6" forceExp="480" life="94" outAttack="7" outDef="5" inAttack="7" inDef="5"/>
+	<FORCE_CONF id="7" forceExp="540" life="98" outAttack="7" outDef="5" inAttack="7" inDef="5"/>
+	<FORCE_CONF id="8" forceExp="600" life="102" outAttack="7" outDef="5" inAttack="7" inDef="5"/>
+	<FORCE_CONF id="9" forceExp="660" life="106" outAttack="7" outDef="6" inAttack="7" inDef="6"/>
+	<FORCE_CONF id="10" forceExp="720" life="111" outAttack="8" outDef="6" inAttack="8" inDef="6" crit="74" toughness="117" reduceHurt="6" addHurt="6" recoverHP="1"/>
+	<FORCE_CONF id="11" forceExp="1560" life="115" outAttack="9" outDef="6" inAttack="9" inDef="6"/>
+	<FORCE_CONF id="12" forceExp="1680" life="120" outAttack="9" outDef="6" inAttack="9" inDef="6"/>
+	<FORCE_CONF id="13" forceExp="1800" life="124" outAttack="10" outDef="6" inAttack="10" inDef="6"/>
+	<FORCE_CONF id="14" forceExp="1920" life="129" outAttack="10" outDef="7" inAttack="10" inDef="7"/>
+	<FORCE_CONF id="15" forceExp="2040" life="134" outAttack="10" outDef="7" inAttack="10" inDef="7"/>
+	<FORCE_CONF id="16" forceExp="2160" life="140" outAttack="11" outDef="7" inAttack="11" inDef="7"/>
+	<FORCE_CONF id="17" forceExp="2280" life="145" outAttack="11" outDef="7" inAttack="11" inDef="7"/>
+	<FORCE_CONF id="18" forceExp="2400" life="151" outAttack="11" outDef="7" inAttack="11" inDef="7"/>
+	<FORCE_CONF id="19" forceExp="2520" life="158" outAttack="12" outDef="8" inAttack="12" inDef="8"/>
+	<FORCE_CONF id="20" forceExp="2640" life="163" outAttack="13" outDef="9" inAttack="13" inDef="9" crit="106" toughness="173" reduceHurt="30" addHurt="30" recoverHP="1"/>
+	<FORCE_CONF id="21" forceExp="4140" life="170" outAttack="13" outDef="9" inAttack="13" inDef="9"/>
+	<FORCE_CONF id="22" forceExp="4320" life="178" outAttack="14" outDef="10" inAttack="14" inDef="10"/>
+	<FORCE_CONF id="23" forceExp="4500" life="184" outAttack="14" outDef="10" inAttack="14" inDef="10"/>
+	<FORCE_CONF id="24" forceExp="4680" life="192" outAttack="15" outDef="10" inAttack="15" inDef="10"/>
+	<FORCE_CONF id="25" forceExp="4860" life="200" outAttack="15" outDef="11" inAttack="15" inDef="11"/>
+	<FORCE_CONF id="26" forceExp="5040" life="208" outAttack="17" outDef="11" inAttack="17" inDef="11"/>
+	<FORCE_CONF id="27" forceExp="5220" life="216" outAttack="17" outDef="11" inAttack="17" inDef="11"/>
+	<FORCE_CONF id="28" forceExp="5400" life="225" outAttack="18" outDef="12" inAttack="18" inDef="12"/>
+	<FORCE_CONF id="29" forceExp="5580" life="233" outAttack="18" outDef="13" inAttack="18" inDef="13"/>
+	<FORCE_CONF id="30" forceExp="5760" life="243" outAttack="19" outDef="13" inAttack="19" inDef="13" crit="160" toughness="257" reduceHurt="30" addHurt="30" recoverHP="2"/>
+	<FORCE_CONF id="31" forceExp="7920" life="252" outAttack="19" outDef="14" inAttack="19" inDef="14"/>
+	<FORCE_CONF id="32" forceExp="8160" life="263" outAttack="20" outDef="14" inAttack="20" inDef="14"/>
+	<FORCE_CONF id="33" forceExp="8400" life="273" outAttack="22" outDef="15" inAttack="22" inDef="15"/>
+	<FORCE_CONF id="34" forceExp="8640" life="284" outAttack="22" outDef="15" inAttack="22" inDef="15"/>
+	<FORCE_CONF id="35" forceExp="8880" life="295" outAttack="23" outDef="16" inAttack="23" inDef="16"/>
+	<FORCE_CONF id="36" forceExp="9120" life="307" outAttack="24" outDef="16" inAttack="24" inDef="16"/>
+	<FORCE_CONF id="37" forceExp="9360" life="319" outAttack="24" outDef="18" inAttack="24" inDef="18"/>
+	<FORCE_CONF id="38" forceExp="9600" life="332" outAttack="25" outDef="18" inAttack="25" inDef="18"/>
+	<FORCE_CONF id="39" forceExp="9840" life="345" outAttack="27" outDef="19" inAttack="27" inDef="19"/>
+	<FORCE_CONF id="40" forceExp="10080" life="360" outAttack="28" outDef="19" inAttack="28" inDef="19" crit="234" toughness="382" reduceHurt="30" addHurt="30" recoverHP="2"/>
+	<FORCE_CONF id="41" forceExp="12900" life="374" outAttack="29" outDef="20" inAttack="29" inDef="20"/>
+	<FORCE_CONF id="42" forceExp="13200" life="388" outAttack="31" outDef="22" inAttack="31" inDef="22"/>
+	<FORCE_CONF id="43" forceExp="13500" life="404" outAttack="32" outDef="22" inAttack="32" inDef="22"/>
+	<FORCE_CONF id="44" forceExp="13800" life="420" outAttack="33" outDef="23" inAttack="33" inDef="23"/>
+	<FORCE_CONF id="45" forceExp="14100" life="437" outAttack="35" outDef="24" inAttack="35" inDef="24"/>
+	<FORCE_CONF id="46" forceExp="14400" life="455" outAttack="36" outDef="24" inAttack="36" inDef="24"/>
+	<FORCE_CONF id="47" forceExp="14700" life="474" outAttack="37" outDef="25" inAttack="37" inDef="25"/>
+	<FORCE_CONF id="48" forceExp="15000" life="492" outAttack="39" outDef="27" inAttack="39" inDef="27"/>
+	<FORCE_CONF id="49" forceExp="15300" life="511" outAttack="40" outDef="28" inAttack="40" inDef="28"/>
+	<FORCE_CONF id="50" forceExp="15600" life="533" outAttack="41" outDef="29" inAttack="41" inDef="29" crit="346" toughness="563" reduceHurt="30" addHurt="30" recoverHP="2"/>
+	<FORCE_CONF id="51" forceExp="19080" life="553" outAttack="44" outDef="31" inAttack="44" inDef="31"/>
+	<FORCE_CONF id="52" forceExp="19440" life="576" outAttack="45" outDef="32" inAttack="45" inDef="32"/>
+	<FORCE_CONF id="53" forceExp="19800" life="599" outAttack="48" outDef="33" inAttack="48" inDef="33"/>
+	<FORCE_CONF id="54" forceExp="20160" life="623" outAttack="49" outDef="35" inAttack="49" inDef="35"/>
+	<FORCE_CONF id="55" forceExp="20520" life="648" outAttack="52" outDef="36" inAttack="52" inDef="36"/>
+	<FORCE_CONF id="56" forceExp="20880" life="674" outAttack="53" outDef="37" inAttack="53" inDef="37"/>
+	<FORCE_CONF id="57" forceExp="21240" life="700" outAttack="56" outDef="39" inAttack="56" inDef="39"/>
+	<FORCE_CONF id="58" forceExp="21600" life="729" outAttack="57" outDef="40" inAttack="57" inDef="40"/>
+	<FORCE_CONF id="59" forceExp="21960" life="758" outAttack="60" outDef="41" inAttack="60" inDef="41"/>
+	<FORCE_CONF id="60" forceExp="22320" life="788" outAttack="62" outDef="44" inAttack="62" inDef="44" crit="514" toughness="832" reduceHurt="30" addHurt="30" recoverHP="3"/>
+	<FORCE_CONF id="61" forceExp="26460" life="819" outAttack="65" outDef="45" inAttack="65" inDef="45"/>
+	<FORCE_CONF id="62" forceExp="26880" life="852" outAttack="67" outDef="48" inAttack="67" inDef="48"/>
+	<FORCE_CONF id="63" forceExp="27300" life="886" outAttack="70" outDef="49" inAttack="70" inDef="49"/>
+	<FORCE_CONF id="64" forceExp="27720" life="921" outAttack="72" outDef="52" inAttack="72" inDef="52"/>
+	<FORCE_CONF id="65" forceExp="28140" life="960" outAttack="75" outDef="53" inAttack="75" inDef="53"/>
+	<FORCE_CONF id="66" forceExp="28560" life="997" outAttack="79" outDef="56" inAttack="79" inDef="56"/>
+	<FORCE_CONF id="67" forceExp="28980" life="1037" outAttack="82" outDef="57" inAttack="82" inDef="57"/>
+	<FORCE_CONF id="68" forceExp="29400" life="1079" outAttack="85" outDef="59" inAttack="85" inDef="59"/>
+	<FORCE_CONF id="69" forceExp="29820" life="1122" outAttack="88" outDef="62" inAttack="88" inDef="62"/>
+	<FORCE_CONF id="70" forceExp="30240" life="1166" outAttack="92" outDef="65" inAttack="92" inDef="65" crit="762" toughness="1235" reduceHurt="30" addHurt="30" recoverHP="3"/>
+	<FORCE_CONF id="71" forceExp="35040" life="1214" outAttack="96" outDef="67" inAttack="96" inDef="67"/>
+	<FORCE_CONF id="72" forceExp="35520" life="1262" outAttack="100" outDef="70" inAttack="100" inDef="70"/>
+	<FORCE_CONF id="73" forceExp="36000" life="1313" outAttack="104" outDef="72" inAttack="104" inDef="72"/>
+	<FORCE_CONF id="74" forceExp="36480" life="1365" outAttack="108" outDef="75" inAttack="108" inDef="75"/>
+	<FORCE_CONF id="75" forceExp="36960" life="1419" outAttack="113" outDef="79" inAttack="113" inDef="79"/>
+	<FORCE_CONF id="76" forceExp="37440" life="1477" outAttack="117" outDef="82" inAttack="117" inDef="82"/>
+	<FORCE_CONF id="77" forceExp="37920" life="1536" outAttack="122" outDef="85" inAttack="122" inDef="85"/>
+	<FORCE_CONF id="78" forceExp="38400" life="1597" outAttack="126" outDef="88" inAttack="126" inDef="88"/>
+	<FORCE_CONF id="79" forceExp="38880" life="1661" outAttack="131" outDef="92" inAttack="131" inDef="92"/>
+	<FORCE_CONF id="80" forceExp="39360" life="1727" outAttack="136" outDef="96" inAttack="136" inDef="96" crit="1133" toughness="1829" reduceHurt="30" addHurt="30" recoverHP="3"/>
+	<FORCE_CONF id="81" forceExp="44820" life="1796" outAttack="142" outDef="100" inAttack="142" inDef="100"/>
+	<FORCE_CONF id="82" forceExp="45360" life="1869" outAttack="148" outDef="104" inAttack="148" inDef="104"/>
+	<FORCE_CONF id="83" forceExp="45900" life="1943" outAttack="153" outDef="108" inAttack="153" inDef="108"/>
+	<FORCE_CONF id="84" forceExp="46440" life="2020" outAttack="160" outDef="113" inAttack="160" inDef="113"/>
+	<FORCE_CONF id="85" forceExp="46980" life="2102" outAttack="166" outDef="117" inAttack="166" inDef="117"/>
+	<FORCE_CONF id="86" forceExp="47520" life="2185" outAttack="173" outDef="122" inAttack="173" inDef="122"/>
+	<FORCE_CONF id="87" forceExp="48060" life="2273" outAttack="179" outDef="126" inAttack="179" inDef="126"/>
+	<FORCE_CONF id="88" forceExp="48600" life="2365" outAttack="187" outDef="131" inAttack="187" inDef="131"/>
+	<FORCE_CONF id="89" forceExp="49140" life="2459" outAttack="195" outDef="136" inAttack="195" inDef="136"/>
+	<FORCE_CONF id="90" forceExp="49680" life="2557" outAttack="203" outDef="141" inAttack="203" inDef="141" crit="1672" toughness="2707" reduceHurt="30" addHurt="30" recoverHP="4"/>
+	<FORCE_CONF id="91" forceExp="55800" life="2659" outAttack="211" outDef="148" inAttack="211" inDef="148"/>
+	<FORCE_CONF id="92" forceExp="56400" life="2766" outAttack="218" outDef="153" inAttack="218" inDef="153"/>
+	<FORCE_CONF id="93" forceExp="57000" life="2877" outAttack="227" outDef="160" inAttack="227" inDef="160"/>
+	<FORCE_CONF id="94" forceExp="57600" life="2992" outAttack="237" outDef="166" inAttack="237" inDef="166"/>
+	<FORCE_CONF id="95" forceExp="58200" life="3111" outAttack="246" outDef="173" inAttack="246" inDef="173"/>
+	<FORCE_CONF id="96" forceExp="58800" life="3236" outAttack="256" outDef="179" inAttack="256" inDef="179"/>
+	<FORCE_CONF id="97" forceExp="59400" life="3365" outAttack="267" outDef="187" inAttack="267" inDef="187"/>
+	<FORCE_CONF id="98" forceExp="60000" life="3500" outAttack="277" outDef="195" inAttack="277" inDef="195"/>
+	<FORCE_CONF id="99" forceExp="60600" life="3641" outAttack="289" outDef="203" inAttack="289" inDef="203"/>
+	<FORCE_CONF id="100" forceExp="61200" life="3725" outAttack="300" outDef="210" inAttack="300" inDef="210" crit="2477" toughness="4006" reduceHurt="30" addHurt="30" recoverHP="4"/>
+</FORCE>

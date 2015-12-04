@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- 被2012 () 使用XMLSpy v编辑的 (http://www.altova.com) by -->
+<!--TASK_KILL_MONSTER_TYPE	= 1,	//杀怪多少只
+	TASK_PASS_MISSION_TYPE	= 2,	//通过关卡
+	TASK_COLLECT_ITEM_TYPE	= 3,	//收集item
+	TASK_NPC_TALK_TYPE		= 4,	//NPC交谈(送信 给NPC东西都都可看做与NPC交谈,由前端主动发送)
+	TASK_EQUIPMENT_UP_TYPE	= 5,	//装备强化类
+	TASK_NERVER_UP_TYPE		= 6,	//经脉
+	TASK_FORCE_UP_TYPE		= 7,	//练气
+	TASK_BREAK_JAR_TYPE		= 8,	//砸罐
+	TASK_SKILL_UP_TYPE		= 9,	//角色技能升级
+	TASK_WEAR_EQUIPMENT_TYPE	= 10, //穿戴装备
+    TASK_ENLIST_PARTNER_TYPE    = 11, //招募弟子
+    TASK_SHAKE_MONEY_TREE_TYPE  = 12, //摇钱树
+    TASK_ELITE_BOSS_TYPE        = 13, //精英怪
+    TASK_SPORTS_TYPE            = 14, //竞技场
+    TASK_FARMLAND_TYPE          = 15, //山庄种植
+    TASK_SHOPPING_MALL_TYPE     = 16, //商城购买
+    TASK_SKILL_MISSION_TYPE     = 17, //藏经阁
+    TASK_TRAIN_TYPE             = 18, //培养
+    TASK_CHANGE_EQUIPMENT_TYPE  = 19, //装备进阶
+    TASK_TRAIN_PARTNER_TYPE     = 20, //培养弟子
+    TASK_PARTNER_INHERIT_TYPE   = 21, //弟子传承
+    TASK_SUCCINCT_EQUIPMENT_TYPE = 22,//装备洗练
+    TASK_USER_ASTROLOGY_TYPE    = 23, //占星
+    TASK_TOWER_BATTLE_TYPE      = 24, //通天塔战斗
+    TASK_PUNCH_EQUIPMENT_TYPE   = 25, //装备打孔
+    TASK_INLAY_EQUIPMENT_TYPE   = 26, //装备镶嵌
+    TASK_COMPOSE_GEM_TYPE       = 27, //合成宝石
+    TASK_ADD_FRIEND_TYPE        = 28, //添加好友
+    TASK_BODYGUARD_TYPE         = 29, //运镖
+    TASK_REWARD_TASK_TYPE       = 30, //悬赏任务
+    TASK_MISSION_TASK_TYPE      = 31, //任务
+    TASK_ACTIVITY_TYPE          = 32, //活动
+    TASK_REWARD_PLATFORM_TYPE 	= 33, //奖励
+    TASK_BUY_ENERGY_TYPE        = 34, //体力购买
+    TASK_RECHARGE_TYPE        	= 35, //充值
+    TASK_REGISTRATION_TYPE      = 36, //签到
+    TASK_WORSHIP_TYPE        	= 37, //神仙姐姐
+-->
+<HELPER_CONFIG>
+	<ACTIVE_DEGREE name="活跃度" desc="">
+		<!--DEGREE_ITEM id="任务类型" name="名称" type="跳转类型" points="完成一次的活跃点数" max_points="最大活跃点数"/-->
+        <DEGREE_ITEM id="1" name="购买体力" type="34" points="1" max_points="1"/>
+        <DEGREE_ITEM id="2" name="签到" type="36" points="1" max_points="1"/>
+		<DEGREE_ITEM id="3" name="参拜神仙姐姐" type="37" points="1" max_points="1"/>
+		<DEGREE_ITEM id="4" name="通关任意普通关卡" type="2" points="1" max_points="10"/>
+		<DEGREE_ITEM id="5" name="强化装备" type="5" points="1" max_points="5"/>
+		<DEGREE_ITEM id="6" name="练气" type="7" points="1" max_points="5"/>
+		<DEGREE_ITEM id="7" name="经脉修炼" type="6" points="1" max_points="2"/>
+		<DEGREE_ITEM id="8" name="完成摇钱树" type="12" points="1" max_points="3"/>
+		<DEGREE_ITEM id="9" name="去种植 " type="15" points="1" max_points="5"/>
+		<DEGREE_ITEM id="10" name="通关精英副本" type="13" points="1" max_points="5"/>
+		<DEGREE_ITEM id="11" name="寻宝" type="8" points="1" max_points="5"/>
+		<DEGREE_ITEM id="12" name="培养 " type="18" points="1" max_points="5"/>
+		<DEGREE_ITEM id="13" name="竞技场挑战" type="14" points="1" max_points="5"/>
+		<DEGREE_ITEM id="14" name="洗练" type="22" points="1" max_points="5"/>
+		<DEGREE_ITEM id="15" name="前往占星" type="23" points="1" max_points="5"/>
+		<DEGREE_ITEM id="16" name="通天塔战斗" type="24" points="1" max_points="5"/>
+		<DEGREE_ITEM id="17" name="完成悬赏任务 " type="30" points="1" max_points="4"/>
+		<DEGREE_ITEM id="18" name="战斗中使用血瓶" type="0" points="1" max_points="2"/>
+		<DEGREE_ITEM id="19" name="挑战世界boss" type="32" points="1" max_points="1"/>
+		<DEGREE_ITEM id="20" name="前往运镖" type="29" points="1" max_points="5"/>
+	</ACTIVE_DEGREE>
+	<HELPER ID="1" name="我要升级" desc="经验">
+		<HELP id="7" name="任务" desc="主线和支线任务获得经验" type="31" star="4"/>
+		<HELP id="8" name="悬赏任务" desc="获得大量经验" type="30" star="5"/>
+		<HELP id="9" name="普通关卡" desc="可获得升级的基础经验" star="3"/>
+		<HELP id="10" name="精英关卡" desc="可获得一些经验" type="13" star="2"/>
+		<HELP id="11" name="vip离线经验" desc="可获得一些经验" star="1"/>
+	</HELPER>
+	<HELPER ID="2" name="我要变强" desc="属性">
+		<HELP id="20" name="装备强化" desc="通过银两强化" type="5" star="5"/>
+		<HELP id="21" name="技能升级" desc="通过银两升级" type="9" star="4"/>
+		<HELP id="22" name="星石镶嵌" desc="升级高级星石提高属性" type="23" star="3"/>
+		<HELP id="23" name="宝石合成" desc="合成高级宝石提高属性" type="27" star="4"/>
+		<HELP id="24" name="练气" desc="使用丹药或黄金练气提高属性" type="7" star="3"/>
+		<HELP id="24" name="经脉" desc="注入真气提升属性" type="6" star="2"/>
+		<HELP id="25" name="培养" desc="通过银两或者黄金培养提高属性" type="18" star="5"/>
+	</HELPER>
+	<HELPER ID="3" name="我要银两" desc="银两">
+		<HELP id="12" name="竞技场" desc="产出一定的银两和内功" type="14" star="2"/>
+		<HELP id="13" name="通天塔" desc="产出一定的银两和种子" type="24" star="2"/>
+		<HELP id="14" name="运镖" desc="产出一定银两和宝箱" type="29" star="3"/>
+		<HELP id="15" name="摇钱树" desc="可以获得大量金钱" type="12" star="5"/>
+		<HELP id="16" name="世界boss" desc="产出大量银两和真气" type="32" star="4"/>
+		<HELP id="29" name="小偷" desc="在普通关卡中随机出现" star="3"/>
+	</HELPER>
+	<HELPER ID="4" name="我要物品" desc="稀有">
+		<HELP id="1" name="进阶卷轴" desc="在精英副本获得" type="13" star="2"/>
+		<HELP id="2" name="进阶材料" desc="在普通副本中获得" star="1"/>
+		<HELP id="3" name="星石" desc="镶嵌角色和弟子获得属性" type="23" star="3"/>
+		<HELP id="4" name="宝石" desc="镶嵌武器获得属性" type="24" star="4"/>
+		<HELP id="5" name="英雄帖" desc="提高悬赏任务经验" star="5"/>
+		<HELP id="6" name="种子" desc="种植后获得相应的东西" type="24" star="2"/>
+	</HELPER>
+	<HELPER ID="5" name="我要黄金" desc="黄金">
+		<HELP id="26" name="充值" desc="在普通关卡中随机出现" type="35" star="5"/>
+		<HELP id="27" name="登陆奖励" desc="可获得黄金、种子等" type="33" star="1"/>
+		<HELP id="27" name="等级奖励" desc="可获得银两、黄金等" type="33" star="2"/>
+		<HELP id="28" name="签到" desc="可获得大量奖励" type="33" star="3"/>
+		<HELP id="29" name="小偷" desc="在普通关卡中随机出现" star="2"/>
+	</HELPER>
+	<HELPER ID="6" name="我要体力" desc="体力">
+		<HELP id="17" name="购买" desc="用元宝直接购买" type="34" star="5"/>
+		<HELP id="18" name="押宝" desc="每天可获得一些体力" type="32" star="2"/>
+		<HELP id="19" name="体力丹" desc="活动获得" star="3"/>
+	</HELPER>
+	<HELPER ID="7" name="我要真气" desc="真气">
+		<HELP id="30" name="种植" desc="真气种子种植获得真气" type="15" star="3"/>
+		<HELP id="7" name="主线任务" desc="完成任务可获得真气奖励" star="4"/>
+		<HELP id="9" name="首次通关" desc="获得真气奖励" star="2"/>
+	</HELPER>
+	<HELPER ID="8" name="我要内功" desc="内功">
+		<HELP id="30" name="种植" desc="内功种子种植获得内功值" type="15" star="4"/>
+		<HELP id="9" name="首次通关" desc="奖励一定的内功值" star="2"/>
+	</HELPER>
+	<HELPER ID="9" name="我要声望" desc="声望">
+		<HELP id="12" name="竞技场" desc="挑战和膜拜可以获得声望" type="14" star="4"/>
+		<HELP id="14" name="运镖" desc="成功运镖可获得一定声望" type="29" star="3"/>
+		<HELP id="16" name="世界boss" desc="获胜即可获得一定声望" type="32" star="3"/>
+	</HELPER>
+</HELPER_CONFIG>

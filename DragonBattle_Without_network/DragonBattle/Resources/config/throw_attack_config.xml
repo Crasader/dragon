@@ -1,0 +1,605 @@
+<!--
+ struct ThrowAttackConfig_t
+ {
+     uint16_t nThrowAttackID;
+     
+     // 抛出物类型
+     kThrowType          nThrowType;
+     
+     // 碰撞类型
+     kThrowAttackType    nAttackType;
+ 
+     // judgeCollide：1为有阻挡，0为忽略阻挡
+     judgeCollide
+ 
+     // 攻击间隔时间，以秒为单位
+     attackInterval
+ 
+     // 移出时的判定值 时间移出则为持续时间 距离移出则为移动距离
+     float fAttackValue;
+     
+     cocos2d::CCPoint    ptThrowStart;
+     
+     union ThrowUnion_t
+     {
+         struct ThrowSpeed_t
+         {
+             float               fThrowSpeedX;
+             float               fThrowSpeedY;
+             float               fThrowSpeedAddX;
+             float               fThrowSpeedAddY;
+         } throwSpeed;
+         struct ThrowBezier_t
+         {
+             float               fThrowSpeed;
+             float               fThrowHeight;
+         } throwBezier;
+         struct ThrowFollow_t
+         {
+             float               fThrowFollowX;
+             float               fThrowFollowY;
+         } throwFollow;
+         struct ThrowTrace_t
+         {
+             float               fThrowTraceX;
+             float               fThrowTraceY;            
+         } throwTrace;
+     } throwUnion;
+ };
+ 
+ // 抛出物碰撞类型
+ enum kThrowAttackType
+ {
+     kExplode = 1,  //碰撞后爆炸，产生AOE效果，飞出场景移出
+     kCollide = 2,  //碰撞后爆炸，但不产生AOE效果 单体伤害，碰撞后消失，飞出场景移出
+     kDistance = 3, //距离移出
+     kOutScreen = 4,//飞出场景移出
+     kTime = 5,     //时间移出
+ };
+ 
+ // 抛出物类型
+ enum kThrowType
+ {
+     kSpeed = 1,     //根据速度调整运行轨迹
+     kBezier = 2,        //贝塞尔曲线调整轨迹
+     kFollow = 3,        //跟随
+     kTrace = 4,         //跟踪
+ };
+ -->
+<THROW_ATTACK_CONFIG>
+	<THROW_ATTACK ID="1" resID="1" attackType="1" attackValue="0.2" throwType="1" throwStartX="40,10">
+		<THROW_SPEED throwSpeedX="2" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="-1"/>
+	</THROW_ATTACK>
+	<THROW_ATTACK ID="2" resID="1" attackType="1" attackValue="0.2" throwType="2" throwStartX="72,1">
+		<THROW_BEZIER throwSpeed="3" throwHeight="3"/>
+	</THROW_ATTACK>
+	<THROW_ATTACK ID="3" resID="1" attackType="1" attackValue="0.2" throwType="3" throwStartX="72,1">
+		<THROW_FOLLOW throwFollowX="3" throwFollowY="3"/>
+	</THROW_ATTACK>
+	<THROW_ATTACK ID="4" resID="1" attackType="1" attackValue="0.2" throwType="4" throwStartX="72,1">
+		<THROW_TRACE throwTraceX="3" throwTraceY="3"/>
+	</THROW_ATTACK>
+	<THROW_ATTACK ID="5" resID="1" attackType="2" attackValue="0.2" throwType="1" throwStartX="0,-10">
+		<THROW_SPEED throwSpeedX="5" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="0"/>
+	</THROW_ATTACK>
+	<THROW_ATTACK ID="6" resID="2" attackType="2" attackValue="0.2" throwType="1" throwStartX="0,-10">
+		<THROW_SPEED throwSpeedX="-5" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="0"/>
+	</THROW_ATTACK>
+	<THROW_ATTACK ID="7" resID="1" attackType="2" attackValue="0.2" throwType="1" throwStartX="0,-30">
+		<THROW_SPEED throwSpeedX="5" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="0"/>
+	</THROW_ATTACK>
+	<THROW_ATTACK ID="8" resID="2" attackType="2" attackValue="0.2" throwType="1" throwStartX="0,-30">
+		<THROW_SPEED throwSpeedX="-5" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="0"/>
+	</THROW_ATTACK>
+	<THROW_ATTACK ID="9" resID="3" attackType="2" attackValue="0.2" throwType="1" throwStartX="0,-10">
+		<THROW_SPEED throwSpeedX="5" throwSpeedY="0" throwSpeedAddX="1" throwSpeedAddY="0"/>
+	</THROW_ATTACK>
+	<!--花魁 火轮 -->
+	<THROW_ATTACK ID="11" resID="4" attackType="5" attackValue="5" throwType="1" throwStartX="0,-10" judgeCollide="0" attackInterval="0.3">
+		<THROW_SPEED throwSpeedX="20" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="0"/>
+	</THROW_ATTACK>
+	<!--花魁 飞鸟1 -->
+	<THROW_ATTACK ID="12" resID="5" attackType="3" attackValue="0.2" throwType="1" throwStartX="0,0">
+		<THROW_SPEED throwSpeedX="0" throwSpeedY="20" throwSpeedAddX="1" throwSpeedAddY="-1"/>
+	</THROW_ATTACK>
+	<!--花魁 刀光 -->
+	<THROW_ATTACK ID="13" resID="7" attackType="4" attackValue="0.2" throwType="1" throwStartX="0,-10">
+		<THROW_SPEED throwSpeedX="20" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="0"/>
+	</THROW_ATTACK>
+	<THROW_ATTACK ID="14" resID="6" attackType="4" attackValue="0.2" throwType="1" throwStartX="0,-10">
+		<THROW_SPEED throwSpeedX="20" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="0"/>
+	</THROW_ATTACK>
+	<THROW_ATTACK ID="15" resID="7" attackType="4" attackValue="0.2" throwType="1" throwStartX="0,-10">
+		<THROW_SPEED throwSpeedX="20" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="0"/>
+	</THROW_ATTACK>
+	<THROW_ATTACK ID="16" resID="6" attackType="4" attackValue="0.2" throwType="1" throwStartX="0,-10">
+		<THROW_SPEED throwSpeedX="20" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="0"/>
+	</THROW_ATTACK>
+	<!--花魁 飞鸟暗器 -->
+	<THROW_ATTACK ID="17" resID="8" attackType="4" attackValue="0.2" throwType="1" throwStartX="80,0">
+		<THROW_SPEED throwSpeedX="10" throwSpeedY="0" throwSpeedAddX="1" throwSpeedAddY="-1.2"/>
+	</THROW_ATTACK>
+	<THROW_ATTACK ID="18" resID="8" attackType="4" attackValue="0.2" throwType="1" throwStartX="0,0">
+		<THROW_SPEED throwSpeedX="10" throwSpeedY="0" throwSpeedAddX="1" throwSpeedAddY="-1.2"/>
+	</THROW_ATTACK>
+	<THROW_ATTACK ID="19" resID="8" attackType="4" attackValue="0.2" throwType="1" throwStartX="-80,0">
+		<THROW_SPEED throwSpeedX="10" throwSpeedY="0" throwSpeedAddX="1" throwSpeedAddY="-1.2"/>
+	</THROW_ATTACK>
+	<THROW_ATTACK ID="20" resID="8" attackType="4" attackValue="0.2" throwType="1" throwStartX="-160,0">
+		<THROW_SPEED throwSpeedX="10" throwSpeedY="0" throwSpeedAddX="1" throwSpeedAddY="-1.2"/>
+	</THROW_ATTACK>
+	<THROW_ATTACK ID="21" resID="8" attackType="4" attackValue="0.2" throwType="1" throwStartX="-240,0">
+		<THROW_SPEED throwSpeedX="10" throwSpeedY="0" throwSpeedAddX="1" throwSpeedAddY="-1.2"/>
+	</THROW_ATTACK>
+	<THROW_ATTACK ID="22" resID="8" attackType="4" attackValue="0.2" throwType="1" throwStartX="-320,0">
+		<THROW_SPEED throwSpeedX="10" throwSpeedY="0" throwSpeedAddX="1" throwSpeedAddY="-1.2"/>
+	</THROW_ATTACK>
+	<!--花魁 飞鸟2 -->
+	<THROW_ATTACK ID="25" resID="5" attackType="4" attackValue="0.2" throwType="1" throwStartX="-600,640">
+		<THROW_SPEED throwSpeedX="0" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="-1"/>
+	</THROW_ATTACK>
+	<THROW_ATTACK ID="26" resID="5" attackType="4" attackValue="0.2" throwType="1" throwStartX="-600,640">
+		<THROW_SPEED throwSpeedX="0" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="-1"/>
+	</THROW_ATTACK>
+	<THROW_ATTACK ID="27" resID="5" attackType="4" attackValue="0.2" throwType="1" throwStartX="-500,640">
+		<THROW_SPEED throwSpeedX="0" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="-1"/>
+	</THROW_ATTACK>
+	<THROW_ATTACK ID="28" resID="5" attackType="4" attackValue="0.2" throwType="1" throwStartX="-500,640">
+		<THROW_SPEED throwSpeedX="0" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="-1"/>
+	</THROW_ATTACK>
+	<THROW_ATTACK ID="29" resID="5" attackType="4" attackValue="0.2" throwType="1" throwStartX="-400,640">
+		<THROW_SPEED throwSpeedX="0" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="-1"/>
+	</THROW_ATTACK>
+	<THROW_ATTACK ID="30" resID="5" attackType="4" attackValue="0.2" throwType="1" throwStartX="-400,640">
+		<THROW_SPEED throwSpeedX="0" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="-1"/>
+	</THROW_ATTACK>
+	<THROW_ATTACK ID="31" resID="5" attackType="4" attackValue="0.2" throwType="1" throwStartX="-300,640">
+		<THROW_SPEED throwSpeedX="0" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="-1"/>
+	</THROW_ATTACK>
+	<THROW_ATTACK ID="32" resID="5" attackType="4" attackValue="0.2" throwType="1" throwStartX="-300,640">
+		<THROW_SPEED throwSpeedX="0" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="-1"/>
+	</THROW_ATTACK>
+	<THROW_ATTACK ID="33" resID="5" attackType="4" attackValue="0.2" throwType="1" throwStartX="-200,640">
+		<THROW_SPEED throwSpeedX="0" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="-1"/>
+	</THROW_ATTACK>
+	<THROW_ATTACK ID="34" resID="5" attackType="4" attackValue="0.2" throwType="1" throwStartX="-200,640">
+		<THROW_SPEED throwSpeedX="0" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="-1"/>
+	</THROW_ATTACK>
+	<THROW_ATTACK ID="35" resID="5" attackType="4" attackValue="0.2" throwType="1" throwStartX="-100,640">
+		<THROW_SPEED throwSpeedX="0" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="-1"/>
+	</THROW_ATTACK>
+	<THROW_ATTACK ID="36" resID="5" attackType="4" attackValue="0.2" throwType="1" throwStartX="-100,640">
+		<THROW_SPEED throwSpeedX="0" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="-1"/>
+	</THROW_ATTACK>
+	<THROW_ATTACK ID="37" resID="5" attackType="4" attackValue="0.2" throwType="1" throwStartX="0,640">
+		<THROW_SPEED throwSpeedX="0" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="-1"/>
+	</THROW_ATTACK>
+	<THROW_ATTACK ID="38" resID="5" attackType="4" attackValue="0.2" throwType="1" throwStartX="0,640">
+		<THROW_SPEED throwSpeedX="0" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="-1"/>
+	</THROW_ATTACK>
+	<THROW_ATTACK ID="39" resID="5" attackType="4" attackValue="0.2" throwType="1" throwStartX="100,640">
+		<THROW_SPEED throwSpeedX="0" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="-1"/>
+	</THROW_ATTACK>
+	<THROW_ATTACK ID="40" resID="5" attackType="4" attackValue="0.2" throwType="1" throwStartX="100,640">
+		<THROW_SPEED throwSpeedX="0" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="-1"/>
+	</THROW_ATTACK>
+	<THROW_ATTACK ID="41" resID="5" attackType="4" attackValue="0.2" throwType="1" throwStartX="200,640">
+		<THROW_SPEED throwSpeedX="0" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="-1"/>
+	</THROW_ATTACK>
+	<THROW_ATTACK ID="42" resID="5" attackType="4" attackValue="0.2" throwType="1" throwStartX="200,640">
+		<THROW_SPEED throwSpeedX="0" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="-1"/>
+	</THROW_ATTACK>
+	<THROW_ATTACK ID="43" resID="5" attackType="4" attackValue="0.2" throwType="1" throwStartX="300,640">
+		<THROW_SPEED throwSpeedX="0" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="-1"/>
+	</THROW_ATTACK>
+	<THROW_ATTACK ID="44" resID="5" attackType="4" attackValue="0.2" throwType="1" throwStartX="300,640">
+		<THROW_SPEED throwSpeedX="0" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="-1"/>
+	</THROW_ATTACK>
+	<THROW_ATTACK ID="45" resID="5" attackType="4" attackValue="0.2" throwType="1" throwStartX="400,640">
+		<THROW_SPEED throwSpeedX="0" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="-1"/>
+	</THROW_ATTACK>
+	<THROW_ATTACK ID="46" resID="5" attackType="4" attackValue="0.2" throwType="1" throwStartX="400,640">
+		<THROW_SPEED throwSpeedX="0" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="-1"/>
+	</THROW_ATTACK>
+	<THROW_ATTACK ID="47" resID="5" attackType="4" attackValue="0.2" throwType="1" throwStartX="500,640">
+		<THROW_SPEED throwSpeedX="0" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="-1"/>
+	</THROW_ATTACK>
+	<THROW_ATTACK ID="48" resID="5" attackType="4" attackValue="0.2" throwType="1" throwStartX="500,640">
+		<THROW_SPEED throwSpeedX="0" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="-1"/>
+	</THROW_ATTACK>
+	<THROW_ATTACK ID="49" resID="5" attackType="4" attackValue="0.2" throwType="1" throwStartX="600,640">
+		<THROW_SPEED throwSpeedX="0" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="-1"/>
+	</THROW_ATTACK>
+	<THROW_ATTACK ID="50" resID="5" attackType="4" attackValue="0.2" throwType="1" throwStartX="600,640">
+		<THROW_SPEED throwSpeedX="0" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="-1"/>
+	</THROW_ATTACK>
+	<!--弈剑 剑雨 -->
+	<THROW_ATTACK ID="51" resID="9" attackType="4" attackValue="0.2" throwType="1" throwStartX="20,640">
+		<THROW_SPEED throwSpeedX="0" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="-1"/>
+	</THROW_ATTACK>
+	<THROW_ATTACK ID="52" resID="9" attackType="4" attackValue="0.2" throwType="1" throwStartX="-90,640">
+		<THROW_SPEED throwSpeedX="0" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="-1"/>
+	</THROW_ATTACK>
+    <THROW_ATTACK ID="53" resID="9" attackType="4" attackValue="0.2" throwType="1" throwStartX="120,640">
+		<THROW_SPEED throwSpeedX="0" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="-1"/>
+	</THROW_ATTACK>
+    <THROW_ATTACK ID="54" resID="9" attackType="4" attackValue="0.2" throwType="1" throwStartX="-30,640">
+		<THROW_SPEED throwSpeedX="0" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="-1"/>
+	</THROW_ATTACK>
+    <THROW_ATTACK ID="55" resID="9" attackType="4" attackValue="0.2" throwType="1" throwStartX="-160,640">
+		<THROW_SPEED throwSpeedX="0" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="-1"/>
+	</THROW_ATTACK>
+    <THROW_ATTACK ID="56" resID="9" attackType="4" attackValue="0.2" throwType="1" throwStartX="160,640">
+		<THROW_SPEED throwSpeedX="0" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="-1"/>
+	</THROW_ATTACK>
+	<!--弈剑 出剑 -->
+	<THROW_ATTACK ID="61" resID="10" attackType="5" attackValue="0.92" throwType="1" throwStartX="200,0">
+		<THROW_SPEED throwSpeedX="0.001" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="0"/>
+	</THROW_ATTACK>
+    <THROW_ATTACK ID="62" resID="10" attackType="5" attackValue="0.92" throwType="1" throwStartX="350,0">
+		<THROW_SPEED throwSpeedX="0.001" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="0"/>
+	</THROW_ATTACK>
+    <THROW_ATTACK ID="63" resID="10" attackType="5" attackValue="0.92" throwType="1" throwStartX="500,0">
+		<THROW_SPEED throwSpeedX="0.001" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="0"/>
+	</THROW_ATTACK>
+	<!--东方不败 出针 -->
+	<THROW_ATTACK ID="65" resID="11" attackType="2" attackValue="0.2" throwType="1" throwStartX="150,10">
+		<THROW_SPEED throwSpeedX="0.001" throwSpeedY="0" throwSpeedAddX="1" throwSpeedAddY="0"/>
+	</THROW_ATTACK>
+    <THROW_ATTACK ID="66" resID="11" attackType="2" attackValue="0.2" throwType="1" throwStartX="150,10">
+		<THROW_SPEED throwSpeedX="0.001" throwSpeedY="0" throwSpeedAddX="1" throwSpeedAddY="-1"/>
+	</THROW_ATTACK>
+    <THROW_ATTACK ID="67" resID="11" attackType="2" attackValue="0.2" throwType="1" throwStartX="120,10">
+		<THROW_SPEED throwSpeedX="0.001" throwSpeedY="0" throwSpeedAddX="1" throwSpeedAddY="-1"/>
+	</THROW_ATTACK>
+    <THROW_ATTACK ID="68" resID="11" attackType="2" attackValue="0.2" throwType="1" throwStartX="90,10">
+		<THROW_SPEED throwSpeedX="0.001" throwSpeedY="0" throwSpeedAddX="1" throwSpeedAddY="-1"/>
+	</THROW_ATTACK>
+    <THROW_ATTACK ID="69" resID="11" attackType="2" attackValue="0.2" throwType="1" throwStartX="-70,10">
+		<THROW_SPEED throwSpeedX="0.001" throwSpeedY="0" throwSpeedAddX="1" throwSpeedAddY="-1"/>
+	</THROW_ATTACK>
+    <THROW_ATTACK ID="70" resID="11" attackType="2" attackValue="0.2" throwType="1" throwStartX="-40,10">
+		<THROW_SPEED throwSpeedX="0.001" throwSpeedY="0" throwSpeedAddX="1" throwSpeedAddY="-1"/>
+	</THROW_ATTACK>
+    <THROW_ATTACK ID="71" resID="11" attackType="2" attackValue="0.2" throwType="1" throwStartX="-10,10">
+		<THROW_SPEED throwSpeedX="0.001" throwSpeedY="0" throwSpeedAddX="1" throwSpeedAddY="-1"/>
+	</THROW_ATTACK>
+ 	<!--弟子1抛雷 -->
+	<THROW_ATTACK ID="81" resID="12" attackType="2" attackValue="0.2" throwType="1" throwStartX="100,100">
+		<THROW_SPEED throwSpeedX="20" throwSpeedY="7" throwSpeedAddX="0" throwSpeedAddY="-1"/>
+	</THROW_ATTACK>
+	<!--弟子3抛出物 -->
+	<THROW_ATTACK ID="82" resID="13" attackType="2" attackValue="0.2" throwType="1" throwStartX="100,10">
+		<THROW_SPEED throwSpeedX="1" throwSpeedY="0" throwSpeedAddX="0.8" throwSpeedAddY="0"/>
+	</THROW_ATTACK>
+	<!--段誉技能2抛出-->
+	<THROW_ATTACK ID="83" resID="14" attackType="4" attackValue="0.2" throwType="1" throwStartX="100,0">
+		<THROW_SPEED throwSpeedX="1" throwSpeedY="0" throwSpeedAddX="0.2" throwSpeedAddY="0"/>
+	</THROW_ATTACK>
+	<!--段誉技能3抛出-->
+	<THROW_ATTACK ID="84" resID="15" attackType="5" attackValue="0.55" throwType="1" throwStartX="300,-50">
+		<THROW_SPEED throwSpeedX="0.001" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="0"/>
+	</THROW_ATTACK>
+	<!--虚竹技能3抛出-->
+	<THROW_ATTACK ID="85" resID="16" attackType="5" attackValue="0.55" throwType="1" throwStartX="100,78">
+		<THROW_SPEED throwSpeedX="0.001" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="0"/>
+	</THROW_ATTACK>
+	<!--虚竹技能3抛出-->
+	<THROW_ATTACK ID="86" resID="16" attackType="5" attackValue="0.55" throwType="1" throwStartX="250,78">
+		<THROW_SPEED throwSpeedX="0.001" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="0"/>
+	</THROW_ATTACK>
+	<!--虚竹技能3抛出-->
+	<THROW_ATTACK ID="87" resID="16" attackType="5" attackValue="0.55" throwType="1" throwStartX="400,78">
+		<THROW_SPEED throwSpeedX="0.001" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="0"/>
+	</THROW_ATTACK>
+	<!--任我行技能抛出-->
+	<THROW_ATTACK ID="88" resID="17" attackType="5" attackValue="0.55" throwType="1" throwStartX="100,40" fixDirection="1">
+		<THROW_SPEED throwSpeedX="0.001" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="0"/>
+	</THROW_ATTACK>
+	<THROW_ATTACK ID="89" resID="73" attackType="5" attackValue="0.55" throwType="1" throwStartX="250,40" fixDirection="1">
+		<THROW_SPEED throwSpeedX="0.001" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="0"/>
+	</THROW_ATTACK>
+	<THROW_ATTACK ID="90" resID="74" attackType="5" attackValue="0.55" throwType="1" throwStartX="500,40" fixDirection="1">
+		<THROW_SPEED throwSpeedX="0.001" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="0"/>
+	</THROW_ATTACK>
+<THROW_ATTACK ID="172" resID="75" attackType="5" attackValue="0.55" throwType="1" throwStartX="650,40" fixDirection="1">
+    <THROW_SPEED throwSpeedX="0.001" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="0"/>
+</THROW_ATTACK>
+<THROW_ATTACK ID="173" resID="76" attackType="5" attackValue="0.55" throwType="1" throwStartX="800,40" fixDirection="1">
+    <THROW_SPEED throwSpeedX="0.001" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="0"/>
+</THROW_ATTACK>
+<THROW_ATTACK ID="174" resID="77" attackType="5" attackValue="0.55" throwType="1" throwStartX="950,40" fixDirection="1">
+    <THROW_SPEED throwSpeedX="0.001" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="0"/>
+</THROW_ATTACK>
+	<!--魔教弟子3抛出物 -->
+	<THROW_ATTACK ID="91" resID="18" attackType="2" attackValue="0.2" throwType="1" throwStartX="100,10">
+		<THROW_SPEED throwSpeedX="2" throwSpeedY="0" throwSpeedAddX="0.6" throwSpeedAddY="0"/>
+	</THROW_ATTACK>
+	<!--李莫愁绿光 -->
+	<THROW_ATTACK ID="92" resID="19" attackType="5" attackValue="0.6" throwType="1" throwStartX="100,180">
+		<THROW_SPEED throwSpeedX="0.01" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="0"/>
+	</THROW_ATTACK>
+	<!--李莫愁针 -->
+	<THROW_ATTACK ID="93" resID="20" attackType="4" attackValue="0.6" throwType="1" throwStartX="100,180" fixDirection="1"><!--固定方向-->
+		<THROW_SPEED throwSpeedX="5" throwSpeedY="-5" throwSpeedAddX="0.9" throwSpeedAddY="-0.9"/>
+	</THROW_ATTACK>
+	<THROW_ATTACK ID="94" resID="20" attackType="4" attackValue="0.6" throwType="1" throwStartX="80,170" fixDirection="1">
+		<THROW_SPEED throwSpeedX="5" throwSpeedY="-5" throwSpeedAddX="0.9" throwSpeedAddY="-0.9"/>
+	</THROW_ATTACK>
+	<THROW_ATTACK ID="95" resID="20" attackType="4" attackValue="0.6" throwType="1" throwStartX="120,190" fixDirection="1">
+		<THROW_SPEED throwSpeedX="5" throwSpeedY="-5" throwSpeedAddX="0.9" throwSpeedAddY="-0.9"/>
+	</THROW_ATTACK>
+	<THROW_ATTACK ID="96" resID="20" attackType="4" attackValue="0.6" throwType="1" throwStartX="110,180" fixDirection="1">
+		<THROW_SPEED throwSpeedX="5" throwSpeedY="-5" throwSpeedAddX="0.9" throwSpeedAddY="-0.9"/>
+	</THROW_ATTACK>
+	<THROW_ATTACK ID="97" resID="20" attackType="4" attackValue="0.6" throwType="1" throwStartX="90,180" fixDirection="1">
+		<THROW_SPEED throwSpeedX="5" throwSpeedY="-5" throwSpeedAddX="0.9" throwSpeedAddY="-0.9"/>
+	</THROW_ATTACK>
+	<THROW_ATTACK ID="98" resID="20" attackType="4" attackValue="0.6" throwType="1" throwStartX="100,160" fixDirection="1">
+		<THROW_SPEED throwSpeedX="5" throwSpeedY="-5" throwSpeedAddX="0.9" throwSpeedAddY="-0.9"/>
+	</THROW_ATTACK>
+	<!--岳枪抛龙头 -->
+	<THROW_ATTACK ID="99" resID="21" attackType="4" attackValue="0.6" throwType="1" throwStartX="100,10" fixDirection="1">
+		<THROW_SPEED throwSpeedX="10" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="0"/>
+	</THROW_ATTACK>
+	<!--周芷若抛出物 -->
+	<THROW_ATTACK ID="100" resID="22" attackType="4" attackValue="0.6" throwType="1" throwStartX="100,10" fixDirection="1">
+		<THROW_SPEED throwSpeedX="10" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="0"/>
+	</THROW_ATTACK>
+	<!--通用4男抛出物 -->
+	<THROW_ATTACK ID="101" resID="23" attackType="4" attackValue="0.6" throwType="1" throwStartX="100,10" fixDirection="1">
+		<THROW_SPEED throwSpeedX="10" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="0"/>
+	</THROW_ATTACK>
+	<!--通用3女抛出物 -->
+	<THROW_ATTACK ID="102" resID="24" attackType="4" attackValue="0.6" throwType="1" throwStartX="100,10" fixDirection="1">
+		<THROW_SPEED throwSpeedX="10" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="0"/>
+	</THROW_ATTACK>
+	<!--郭靖普攻2抛出 -->
+	<THROW_ATTACK ID="103" resID="25" attackType="4" attackValue="0.3" throwType="1" throwStartX="100,20">
+		<THROW_SPEED throwSpeedX="20" throwSpeedY="0" throwSpeedAddX="0.8" throwSpeedAddY="0"/>
+	</THROW_ATTACK>
+    <THROW_ATTACK ID="104" resID="25" attackType="4" attackValue="0.3" throwType="1" throwStartX="90,20">
+		<THROW_SPEED throwSpeedX="20" throwSpeedY="0" throwSpeedAddX="0.8" throwSpeedAddY="0"/>
+	</THROW_ATTACK>
+    <THROW_ATTACK ID="105" resID="25" attackType="4" attackValue="0.3" throwType="1" throwStartX="80,20">
+		<THROW_SPEED throwSpeedX="20" throwSpeedY="0" throwSpeedAddX="0.8" throwSpeedAddY="0"/>
+	</THROW_ATTACK>
+    <!--郭靖技能抛出 -->
+	<THROW_ATTACK ID="106" resID="25" attackType="4" attackValue="0.3" throwType="1" throwStartX="100,200">
+		<THROW_SPEED throwSpeedX="20" throwSpeedY="-20" throwSpeedAddX="0" throwSpeedAddY="0"/>
+	</THROW_ATTACK>
+    <THROW_ATTACK ID="107" resID="25" attackType="4" attackValue="0.3" throwType="1" throwStartX="50,150">
+		<THROW_SPEED throwSpeedX="20" throwSpeedY="-20" throwSpeedAddX="0" throwSpeedAddY="0"/>
+	</THROW_ATTACK>
+    <THROW_ATTACK ID="108" resID="25" attackType="4" attackValue="0.3" throwType="1" throwStartX="150,120">
+		<THROW_SPEED throwSpeedX="20" throwSpeedY="-20" throwSpeedAddX="0" throwSpeedAddY="0"/>
+	</THROW_ATTACK>
+    <THROW_ATTACK ID="109" resID="25" attackType="4" attackValue="0.3" throwType="1" throwStartX="120,220">
+		<THROW_SPEED throwSpeedX="20" throwSpeedY="-20" throwSpeedAddX="0" throwSpeedAddY="0"/>
+	</THROW_ATTACK>
+    <THROW_ATTACK ID="110" resID="25" attackType="4" attackValue="0.3" throwType="1" throwStartX="135,125">
+		<THROW_SPEED throwSpeedX="20" throwSpeedY="-20" throwSpeedAddX="0" throwSpeedAddY="0"/>
+	</THROW_ATTACK>
+    <THROW_ATTACK ID="111" resID="25" attackType="4" attackValue="0.3" throwType="1" throwStartX="170,100">
+		<THROW_SPEED throwSpeedX="20" throwSpeedY="-20" throwSpeedAddX="0" throwSpeedAddY="0"/>
+	</THROW_ATTACK>
+    <THROW_ATTACK ID="112" resID="25" attackType="4" attackValue="0.3" throwType="1" throwStartX="100,150">
+		<THROW_SPEED throwSpeedX="20" throwSpeedY="-20" throwSpeedAddX="0" throwSpeedAddY="0"/>
+	</THROW_ATTACK>
+	<!--王语嫣技能抛出-->
+	<THROW_ATTACK ID="113" resID="26" attackType="5" attackValue="0.4" throwType="1" throwStartX="0,-195">
+		<THROW_SPEED throwSpeedX="0.01" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="0"/>
+	</THROW_ATTACK>
+	<!--小龙女技能抛出 -->
+	<THROW_ATTACK ID="114" resID="27" attackType="5" attackValue="0.4" throwType="1" throwStartX="80,90">
+		<THROW_SPEED throwSpeedX="20" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="0"/>
+	</THROW_ATTACK>
+	<!--北冥神功技能抛出 -->
+	<THROW_ATTACK ID="115" resID="28" attackType="4" attackValue="0.2" throwType="1" throwStartX="150,5">
+		<THROW_SPEED throwSpeedX="11" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="0"/>
+	</THROW_ATTACK>
+	<!--碧波掌技能抛出 -->
+	<THROW_ATTACK ID="116" resID="29" attackType="4" attackValue="0.2" throwType="1" throwStartX="150,5">
+		<THROW_SPEED throwSpeedX="11" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="0"/>
+	</THROW_ATTACK>
+	<!--冰魄银针技能抛出 -->
+	<THROW_ATTACK ID="117" resID="30" attackType="4" attackValue="0.2" throwType="1" throwStartX="150,5">
+		<THROW_SPEED throwSpeedX="11" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="0"/>
+	</THROW_ATTACK>
+	<!--冲灵剑法技能抛出 -->
+	<THROW_ATTACK ID="118" resID="31" attackType="4" attackValue="0.2" throwType="1" throwStartX="150,5">
+		<THROW_SPEED throwSpeedX="11" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="0"/>
+	</THROW_ATTACK>
+	<!--疯狂快刀技能抛出 -->
+	<THROW_ATTACK ID="119" resID="32" attackType="4" attackValue="0.2" throwType="1" throwStartX="150,5">
+		<THROW_SPEED throwSpeedX="11" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="0"/>
+	</THROW_ATTACK>
+	<!--化骨绵掌技能抛出 -->
+	<THROW_ATTACK ID="120" resID="33" attackType="4" attackValue="0.2" throwType="1" throwStartX="150,5">
+		<THROW_SPEED throwSpeedX="11" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="0"/>
+	</THROW_ATTACK>
+	<!--降龙十八掌技能抛出 -->
+	<THROW_ATTACK ID="121" resID="34" attackType="4" attackValue="0.2" throwType="1" throwStartX="150,5">
+		<THROW_SPEED throwSpeedX="11" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="0"/>
+	</THROW_ATTACK>
+	<!--九阴白骨爪技能抛出 -->
+	<THROW_ATTACK ID="122" resID="35" attackType="4" attackValue="0.2" throwType="1" throwStartX="150,5">
+		<THROW_SPEED throwSpeedX="11" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="0"/>
+	</THROW_ATTACK>
+	<!--九阴真经技能抛出 -->
+	<THROW_ATTACK ID="123" resID="36" attackType="4" attackValue="0.2" throwType="1" throwStartX="150,5">
+		<THROW_SPEED throwSpeedX="11" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="0"/>
+	</THROW_ATTACK>
+	<!--葵花宝典技能抛出 -->
+	<THROW_ATTACK ID="124" resID="37" attackType="4" attackValue="0.2" throwType="1" throwStartX="150,5">
+		<THROW_SPEED throwSpeedX="11" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="0"/>
+	</THROW_ATTACK>
+	<!--六脉神剑技能抛出 -->
+	<THROW_ATTACK ID="125" resID="38" attackType="4" attackValue="0.2" throwType="1" throwStartX="150,5">
+		<THROW_SPEED throwSpeedX="11" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="0"/>
+	</THROW_ATTACK>
+	<!--龙象般若功技能抛出 -->
+	<THROW_ATTACK ID="126" resID="39" attackType="4" attackValue="0.2" throwType="1" throwStartX="150,5">
+		<THROW_SPEED throwSpeedX="11" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="0"/>
+	</THROW_ATTACK>
+	<!--龙爪手技能抛出 -->
+	<THROW_ATTACK ID="127" resID="40" attackType="4" attackValue="0.2" throwType="1" throwStartX="150,5">
+		<THROW_SPEED throwSpeedX="11" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="0"/>
+	</THROW_ATTACK>
+	<!--罗汉拳技能抛出 -->
+	<THROW_ATTACK ID="128" resID="41" attackType="4" attackValue="0.2" throwType="1" throwStartX="150,5">
+		<THROW_SPEED throwSpeedX="11" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="0"/>
+	</THROW_ATTACK>
+	<!--漫天花雨技能抛出 -->
+	<THROW_ATTACK ID="129" resID="42" attackType="4" attackValue="0.2" throwType="1" throwStartX="150,5">
+		<THROW_SPEED throwSpeedX="11" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="0"/>
+	</THROW_ATTACK>
+	<!--辟邪剑谱技能抛出 -->
+	<THROW_ATTACK ID="130" resID="43" attackType="4" attackValue="0.2" throwType="1" throwStartX="150,5">
+		<THROW_SPEED throwSpeedX="11" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="0"/>
+	</THROW_ATTACK>
+	<!--全真剑法技能抛出 -->
+	<THROW_ATTACK ID="131" resID="44" attackType="4" attackValue="0.2" throwType="1" throwStartX="150,5">
+		<THROW_SPEED throwSpeedX="11" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="0"/>
+	</THROW_ATTACK>
+	<!--太祖长拳技能抛出 -->
+	<THROW_ATTACK ID="132" resID="45" attackType="4" attackValue="0.2" throwType="1" throwStartX="150,5">
+		<THROW_SPEED throwSpeedX="11" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="0"/>
+	</THROW_ATTACK>
+	<!--铁砂掌技能抛出 -->
+	<THROW_ATTACK ID="133" resID="46" attackType="4" attackValue="0.2" throwType="1" throwStartX="150,5">
+		<THROW_SPEED throwSpeedX="11" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="0"/>
+	</THROW_ATTACK>
+	<!--无名刀法技能抛出 -->
+	<THROW_ATTACK ID="134" resID="47" attackType="4" attackValue="0.2" throwType="1" throwStartX="150,5">
+		<THROW_SPEED throwSpeedX="11" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="0"/>
+	</THROW_ATTACK>
+	<!--无名剑法技能抛出 -->
+	<THROW_ATTACK ID="135" resID="48" attackType="4" attackValue="0.2" throwType="1" throwStartX="150,5">
+		<THROW_SPEED throwSpeedX="11" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="0"/>
+	</THROW_ATTACK>
+	<!--无名掌法技能抛出 -->
+	<THROW_ATTACK ID="136" resID="49" attackType="4" attackValue="0.2" throwType="1" throwStartX="150,5">
+		<THROW_SPEED throwSpeedX="11" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="0"/>
+	</THROW_ATTACK>
+	<!--吸星大法技能抛出 -->
+	<THROW_ATTACK ID="137" resID="50" attackType="5" attackValue="0.8" throwType="1" throwStartX="150,5">
+		<THROW_SPEED throwSpeedX="0.01" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="0"/>
+	</THROW_ATTACK>
+	<!--一阳指技能抛出 -->
+	<THROW_ATTACK ID="138" resID="51" attackType="4" attackValue="0.2" throwType="1" throwStartX="150,5">
+		<THROW_SPEED throwSpeedX="11" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="0"/>
+	</THROW_ATTACK>
+	<!--易筋经技能抛出 -->
+	<THROW_ATTACK ID="139" resID="52" attackType="4" attackValue="0.2" throwType="1" throwStartX="150,5">
+		<THROW_SPEED throwSpeedX="11" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="0"/>
+	</THROW_ATTACK>
+	<!--鹰爪手技能抛出 -->
+	<THROW_ATTACK ID="140" resID="53" attackType="4" attackValue="0.2" throwType="1" throwStartX="150,5">
+		<THROW_SPEED throwSpeedX="11" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="0"/>
+	</THROW_ATTACK>
+	<!--越女剑法技能抛出 -->
+	<THROW_ATTACK ID="141" resID="54" attackType="4" attackValue="0.2" throwType="1" throwStartX="150,5">
+		<THROW_SPEED throwSpeedX="12" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="0"/>
+	</THROW_ATTACK>
+	<!--紫霞神功能抛出 -->
+	<THROW_ATTACK ID="142" resID="55" attackType="4" attackValue="0.2" throwType="1" throwStartX="150,5">
+		<THROW_SPEED throwSpeedX="11" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="0"/>
+	</THROW_ATTACK>
+	<!--抛出物爆点 -->
+	<THROW_ATTACK ID="143" resID="56" attackType="5" attackValue="0.7" throwType="1" throwStartX="210,-5">
+		<THROW_SPEED throwSpeedX="0.001" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="0"/>
+	</THROW_ATTACK>
+	<!--金轮法王技能抛出-->
+	<THROW_ATTACK ID="144" resID="57" attackType="5" attackValue="0.3" throwType="1" throwStartX="300,-50">
+		<THROW_SPEED throwSpeedX="0.001" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="0"/>
+	</THROW_ATTACK>
+	<!--乔峰技能抛出 -->
+	<THROW_ATTACK ID="145" resID="58" attackType="4" attackValue="0.2" throwType="1" throwStartX="150,-30">
+		<THROW_SPEED throwSpeedX="11" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="0"/>
+	</THROW_ATTACK>
+	<THROW_ATTACK ID="146" resID="58" attackType="4" attackValue="0.2" throwType="1" throwStartX="120,100">
+		<THROW_SPEED throwSpeedX="11" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="0"/>
+	</THROW_ATTACK>
+	<THROW_ATTACK ID="147" resID="58" attackType="4" attackValue="0.2" throwType="1" throwStartX="80,30">
+		<THROW_SPEED throwSpeedX="11" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="0"/>
+	</THROW_ATTACK>
+    <!--段誉技能4抛出-->
+	<THROW_ATTACK ID="148" resID="14" attackType="4" attackValue="0.2" throwType="1" throwStartX="120,0">
+		<THROW_SPEED throwSpeedX="1" throwSpeedY="0" throwSpeedAddX="0.2" throwSpeedAddY="0"/>
+	</THROW_ATTACK>
+    <THROW_ATTACK ID="149" resID="14" attackType="4" attackValue="0.2" throwType="1" throwStartX="80,40">
+		<THROW_SPEED throwSpeedX="1" throwSpeedY="0" throwSpeedAddX="0.2" throwSpeedAddY="0"/>
+	</THROW_ATTACK>
+    <THROW_ATTACK ID="150" resID="14" attackType="4" attackValue="0.2" throwType="1" throwStartX="40,-30">
+		<THROW_SPEED throwSpeedX="1" throwSpeedY="0" throwSpeedAddX="0.2" throwSpeedAddY="0"/>
+	</THROW_ATTACK>
+    <!--花魁必杀技能抛出-->
+	<THROW_ATTACK ID="151" resID="59" attackType="5" attackValue="0.2" throwType="1" throwStartX="0,15" fixDirection="1" fixPoi = "1">
+		<THROW_SPEED throwSpeedX="0.001" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="0"/>
+	</THROW_ATTACK>
+    <THROW_ATTACK ID="152" resID="60" attackType="5" attackValue="0.2" throwType="1" throwStartX="0,15" fixDirection="1" fixPoi = "1">
+		<THROW_SPEED throwSpeedX="0.001" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="0"/>
+	</THROW_ATTACK>
+    <THROW_ATTACK ID="153" resID="61" attackType="5" attackValue="0.2" throwType="1" throwStartX="0,15" fixDirection="1" fixPoi = "1">
+		<THROW_SPEED throwSpeedX="0.001" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="0"/>
+	</THROW_ATTACK>
+    <THROW_ATTACK ID="154" resID="62" attackType="5" attackValue="0.2" throwType="1" throwStartX="0,15" fixDirection="1" fixPoi = "1">
+		<THROW_SPEED throwSpeedX="0.001" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="0"/>
+	</THROW_ATTACK>
+    <!--男枪必杀龙卷风抛出-->
+	<THROW_ATTACK ID="155" resID="63" attackType="5" attackValue="0.8571" throwType="1" throwStartX="0,15" fixDirection="1" fixPoi = "1">
+		<THROW_SPEED throwSpeedX="0.001" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="0"/>
+	</THROW_ATTACK>
+    <THROW_ATTACK ID="156" resID="64" attackType="5" attackValue="0.8571" throwType="1" throwStartX="0,15" fixDirection="1" fixPoi = "1">
+		<THROW_SPEED throwSpeedX="0.001" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="0"/>
+	</THROW_ATTACK>
+    <!--男枪闪电抛出-->
+	<THROW_ATTACK ID="157" resID="65" attackType="5" attackValue="0.7" throwType="1" throwStartX="50,220" fixDirection="1" fixPoi = "1">
+		<THROW_SPEED throwSpeedX="0.001" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="0"/>
+	</THROW_ATTACK>
+    <THROW_ATTACK ID="158" resID="66" attackType="5" attackValue="0.7" throwType="1" throwStartX="300,220" fixDirection="1" fixPoi = "1">
+		<THROW_SPEED throwSpeedX="0.001" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="0"/>
+	</THROW_ATTACK>
+    <THROW_ATTACK ID="159" resID="67" attackType="5" attackValue="0.7" throwType="1" throwStartX="550,220" fixDirection="1" fixPoi = "1">
+		<THROW_SPEED throwSpeedX="0.001" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="0"/>
+	</THROW_ATTACK>
+    <!--大剑必杀抛出-->
+    <THROW_ATTACK ID="160" resID="68" attackType="5" attackValue="0.62" throwType="1" throwStartX="100,0" fixDirection="1" fixPoi = "1">
+		<THROW_SPEED throwSpeedX="0.001" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="0"/>
+	</THROW_ATTACK>
+    <THROW_ATTACK ID="161" resID="68" attackType="5" attackValue="0.62" throwType="1" throwStartX="-100,0" fixDirection="1" fixPoi = "1">
+		<THROW_SPEED throwSpeedX="0.001" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="0"/>
+	</THROW_ATTACK>
+    <THROW_ATTACK ID="162" resID="68" attackType="5" attackValue="0.62" throwType="1" throwStartX="250,0" fixDirection="1" fixPoi = "1">
+		<THROW_SPEED throwSpeedX="0.001" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="0"/>
+	</THROW_ATTACK>
+    <THROW_ATTACK ID="163" resID="68" attackType="5" attackValue="0.62" throwType="1" throwStartX="-250,0" fixDirection="1" fixPoi = "1">
+		<THROW_SPEED throwSpeedX="0.001" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="0"/>
+	</THROW_ATTACK>
+    <THROW_ATTACK ID="164" resID="68" attackType="5" attackValue="0.62" throwType="1" throwStartX="400,0" fixDirection="1" fixPoi = "1">
+		<THROW_SPEED throwSpeedX="0.001" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="0"/>
+	</THROW_ATTACK>
+    <THROW_ATTACK ID="165" resID="68" attackType="5" attackValue="0.62" throwType="1" throwStartX="-400,0" fixDirection="1" fixPoi = "1">
+		<THROW_SPEED throwSpeedX="0.001" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="0"/>
+	</THROW_ATTACK>
+    <THROW_ATTACK ID="166" resID="68" attackType="5" attackValue="0.62" throwType="1" throwStartX="550,0" fixDirection="1" fixPoi = "1">
+		<THROW_SPEED throwSpeedX="0.001" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="0"/>
+	</THROW_ATTACK>
+    <THROW_ATTACK ID="167" resID="68" attackType="5" attackValue="0.62" throwType="1" throwStartX="-550,0" fixDirection="1" fixPoi = "1">
+		<THROW_SPEED throwSpeedX="0.001" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="0"/>
+	</THROW_ATTACK>
+    <!--男枪必杀龙卷风抛出-->
+	<THROW_ATTACK ID="168" resID="69" attackType="5" attackValue="0.8571" throwType="1" throwStartX="0,15" fixDirection="1" fixPoi = "1">
+		<THROW_SPEED throwSpeedX="0.001" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="0"/>
+	</THROW_ATTACK>
+    <THROW_ATTACK ID="169" resID="70" attackType="5" attackValue="0.8571" throwType="1" throwStartX="0,15" fixDirection="1" fixPoi = "1">
+		<THROW_SPEED throwSpeedX="0.001" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="0"/>
+	</THROW_ATTACK>
+    <THROW_ATTACK ID="170" resID="71" attackType="5" attackValue="0.8571" throwType="1" throwStartX="0,15" fixDirection="1" fixPoi = "1">
+		<THROW_SPEED throwSpeedX="0.001" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="0"/>
+	</THROW_ATTACK>
+    <THROW_ATTACK ID="171" resID="72" attackType="5" attackValue="0.8571" throwType="1" throwStartX="0,15" fixDirection="1" fixPoi = "1">
+		<THROW_SPEED throwSpeedX="0.001" throwSpeedY="0" throwSpeedAddX="0" throwSpeedAddY="0"/>
+	</THROW_ATTACK>
+</THROW_ATTACK_CONFIG>

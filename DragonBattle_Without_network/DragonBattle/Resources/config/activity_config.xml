@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<!--
+ 
+ start_end_date 起始日期，如果每天都有该活动，不用填写
+ start_end_time 每天内活动的起始时间，如果是全天不用填写
+ 
+ <activity id="1004" name="" need_lv="1" need_vip="0" start_end_date="" start_end_time="" prizes="" des="开服有惊喜，活动不错过！">
+ </activity>
+ 
+ -->
+<activities>
+    <activity id="1001" name="押宝赢体力" need_lv="23" need_vip="0" start_end_date="" start_end_time="12:30:00,13:00:00;18:30:00,19:00:00" prizes="5" des="每次掌门都有3次押宝机会，快来试试运气吧。">
+    </activity>
+    <activity id="1002" name="世界boss" need_lv="23" need_vip="0" start_end_date="" start_end_time="00:30:00,06:00:00;06:30:00,12:00:00;12:30:00,18:00:00;18:30:00,23:30" prizes="0;6" des="每天有2次参与机会，快来与boss一决高下。">
+    </activity>
+	<activity id="1003" name="幸运大转盘" need_lv="1" need_vip="0" start_end_date="2014-1-7,2014-2-28" start_end_time="" prizes="" des="碰碰你的运气，这里有很多超值道具">
+    </activity>
+</activities>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PRESTIGE>
+	<CHALLENGE_CONF id="1" titleName="平民" needPrestige="50" needLevel="5" needYxb="100" giftID="100011" missionID="1001"/>
+	<CHALLENGE_CONF id="2" titleName="好汉" needPrestige="200" needLevel="10" needYxb="400" giftID="100012" missionID="1002"/>
+	<CHALLENGE_CONF id="3" titleName="壮士" needPrestige="800" needLevel="15" needYxb="1600" giftID="100013" missionID="1003"/>
+	<CHALLENGE_CONF id="4" titleName="勇士" needPrestige="2000" needLevel="20" needYxb="4000" giftID="100014" missionID="1004"/>
+	<CHALLENGE_CONF id="5" titleName="义士" needPrestige="5000" needLevel="25" needYxb="10000" giftID="100015" missionID="1005"/>
+	<CHALLENGE_CONF id="6" titleName="英雄" needPrestige="10000" needLevel="30" needYxb="20000" giftID="100016" missionID="1006"/>
+	<CHALLENGE_CONF id="7" titleName="豪杰" needPrestige="30000" needLevel="35" needYxb="60000" giftID="100017" missionID="1007"/>
+	<CHALLENGE_CONF id="8" titleName="侠士" needPrestige="80000" needLevel="40" needYxb="160000" giftID="100018" missionID="1008"/>
+	<CHALLENGE_CONF id="9" titleName="少侠" needPrestige="200000" needLevel="45" needYxb="400000" giftID="100019" missionID="1009"/>
+	<CHALLENGE_CONF id="10" titleName="东侠" needPrestige="500000" needLevel="50" needYxb="1000000" giftID="100020" missionID="1010"/>
+	<CHALLENGE_CONF id="11" titleName="西侠" needPrestige="800000" needLevel="55" needYxb="1600000" giftID="100021" missionID="1011"/>
+	<CHALLENGE_CONF id="12" titleName="南侠" needPrestige="1500000" needLevel="60" needYxb="3000000" giftID="100022" missionID="1012"/>
+	<CHALLENGE_CONF id="13" titleName="北侠" needPrestige="2500000" needLevel="65" needYxb="5000000" giftID="100023" missionID="1013"/>
+	<CHALLENGE_CONF id="14" titleName="游侠" needPrestige="4000000" needLevel="70" needYxb="8000000" giftID="100024" missionID="1014"/>
+	<CHALLENGE_CONF id="15" titleName="豪侠" needPrestige="6000000" needLevel="75" needYxb="12000000" giftID="100025" missionID="1015"/>
+	<CHALLENGE_CONF id="16" titleName="奇侠" needPrestige="8000000" needLevel="80" needYxb="16000000" giftID="100026" missionID="1016"/>
+	<CHALLENGE_CONF id="17" titleName="英侠" needPrestige="10000000" needLevel="85" needYxb="20000000" giftID="100027" missionID="1017"/>
+	<CHALLENGE_CONF id="18" titleName="狂侠" needPrestige="12000000" needLevel="90" needYxb="24000000" giftID="100028" missionID="1018"/>
+	<CHALLENGE_CONF id="19" titleName="仙侠" needPrestige="14000000" needLevel="95" needYxb="28000000" giftID="100029" missionID="1019"/>
+	<CHALLENGE_CONF id="20" titleName="大武侠" needPrestige="20000000" needLevel="100" needYxb="40000000" giftID="100030" missionID="1020"/>
+</PRESTIGE>
