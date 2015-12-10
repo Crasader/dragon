@@ -14,6 +14,24 @@
 
 class LoadingScene : public cocos2d::Scene
 {
+    enum class TagType
+    {
+        BG,
+        UI,
+        TIP,
+        LOADING
+    };
+    
+public:
+    static LoadingScene getInstance();
+    
+public:
+    LoadingScene();
+    
+    ~LoadingScene();
+    
+    bool init();
+    
     
 };
 
