@@ -11,26 +11,28 @@
 
 #include <stdio.h>
 #include "cocos2d.h"
+#include "BaseScene.h"
 
-class LoadingScene : public cocos2d::Scene
+class LoadingScene : public BaseScene
 {
+public:
     enum class TagType
     {
-        BG,
+        BG=401,
         UI,
         TIP,
         LOADING
     };
     
 public:
-    static LoadingScene getInstance();
+    static LoadingScene *create();
     
-public:
     LoadingScene();
     
     ~LoadingScene();
     
-    bool init();
+    bool init() override;
+
     
     
 };
