@@ -11,13 +11,23 @@
 
 USING_NS_CC;
 
+BaseScene::BaseScene()
+{
+    
+}
+
+BaseScene::~BaseScene()
+{
+    
+}
+
 bool BaseScene::init()
 {
     return Scene::init();
 }
 
 
-void BaseScene::addWidgetOnScene(int tag)
+void BaseScene::addLayerWithTag(int tag)
 {
     ui::Widget *widget = ui::Widget::create();
     widget->setZOrder(tag);

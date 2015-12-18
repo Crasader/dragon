@@ -25,7 +25,7 @@ public:
     virtual void showMe();
     
 protected:
-    virtual void addWidgetOnScene(int tag);
+    virtual void addLayerWithTag(int tag);
 
 };
 

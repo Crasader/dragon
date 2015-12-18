@@ -22,18 +22,27 @@ BattleScene *BattleScene::create()
     }
 }
 
+BattleScene::BattleScene()
+{
+    
+}
+
+BattleScene::~BattleScene()
+{
+    
+}
 
 bool BattleScene::init()
 {
     bool ret = BaseScene::init();
     
-    this->addWidgetOnScene((int)TagType::REAR);
-    this->addWidgetOnScene((int)TagType::MID);
-    this->addWidgetOnScene((int)TagType::AHEAD);
-    this->addWidgetOnScene((int)TagType::JOYPAD);
-    this->addWidgetOnScene((int)TagType::UI);
-    this->addWidgetOnScene((int)TagType::TIP);
-    this->addWidgetOnScene((int)TagType::LOADING);
+    this->addLayerWithTag((int)TagType::REAR);
+    this->addLayerWithTag((int)TagType::MID);
+    this->addLayerWithTag((int)TagType::AHEAD);
+    this->addLayerWithTag((int)TagType::JOYPAD);
+    this->addLayerWithTag((int)TagType::UI);
+    this->addLayerWithTag((int)TagType::TIP);
+    this->addLayerWithTag((int)TagType::LOADING);
     
     return ret;
 }

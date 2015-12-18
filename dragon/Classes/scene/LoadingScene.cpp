@@ -25,13 +25,23 @@ LoadingScene *LoadingScene::create()
     }
 }
 
+LoadingScene::LoadingScene()
+{
+    
+}
+
+LoadingScene::~LoadingScene()
+{
+    
+}
+
 bool LoadingScene::init()
 {   bool ret = BaseScene::init();
     
-    this->addWidgetOnScene((int)TagType::BG);
-    this->addWidgetOnScene((int)TagType::UI);
-    this->addWidgetOnScene((int)TagType::TIP);
-    this->addWidgetOnScene((int)TagType::LOADING);
+    this->addLayerWithTag((int)TagType::BG);
+    this->addLayerWithTag((int)TagType::UI);
+    this->addLayerWithTag((int)TagType::TIP);
+    this->addLayerWithTag((int)TagType::LOADING);
     
     return ret;
 }

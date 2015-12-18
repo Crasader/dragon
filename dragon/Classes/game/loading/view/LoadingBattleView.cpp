@@ -24,17 +24,27 @@ LoadingBattleView *LoadingBattleView::create()
     }
 }
 
+LoadingBattleView::LoadingBattleView()
+{
+    
+}
+
+LoadingBattleView::~LoadingBattleView()
+{
+    
+}
+
 bool LoadingBattleView::init()
 {
     bool ret = BaseView::init();
     
-    //append my view
-    
-    this->addEventListener();
-    
     return ret;
 }
 
+void LoadingBattleView::appendView()
+{
+    
+}
 
 void LoadingBattleView::addEventListener()
 {

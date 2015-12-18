@@ -25,6 +25,8 @@ public:
     bool init() override;
     
 private:
+    virtual void appendView();
+    
     virtual void addEventListener();
 };
 

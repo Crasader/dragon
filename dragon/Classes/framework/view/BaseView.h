@@ -26,7 +26,20 @@ public:
     bool init() override;
     
 protected:
+    virtual void appendView() = 0;
+    
     virtual void addEventListener() = 0;
+
+    //use before BaseView::init()
+    void setNeedBg(bool pNeedBg);
+    
+private:
+    void addTouchedBg();
+    
+private:
+    bool _needBg; //the view need touchable bg or not
+    
+    ui::Layout *_bg;//the bg
     
 };
 
