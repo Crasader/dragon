@@ -7,6 +7,7 @@
 //
 
 #include "LoginView.h"
+#include "WebSocketService.h"
 
 LoginView *LoginView::create()
 {
@@ -52,6 +53,7 @@ void LoginView::appendView()
     
     _sendText = ui::TextField::create();
     _sendText->setPosition(Vec2(winSize.width/4, winSize.height/2));
+    _sendText->setColor(Color3B(125, 125, 125));
     this->addChild(_sendText);
 }
 
@@ -64,4 +66,5 @@ void LoginView::addClickListener()
 void LoginView::onSendButtonClick(ui::Button *sender)
 {
     CCLOG("onSendButtonClick()................");
+    WebSocketService::getInstance()->sendMessage();
 }
