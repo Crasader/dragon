@@ -65,6 +65,7 @@
 		D44C620E132DFF430009C878 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620D132DFF430009C878 /* AVFoundation.framework */; };
 		D44C6210132DFF4E0009C878 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620F132DFF4E0009C878 /* AudioToolbox.framework */; };
 		D6B0611B1803AB670077942B /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6B0611A1803AB670077942B /* CoreMotion.framework */; };
+		E23281D71C2D2FC10044A504 /* ControlFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E23281D51C2D2FC10044A504 /* ControlFactory.cpp */; };
 		E23F681C1C1ADA14001EEB03 /* LoadingBattleView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E23F68121C1ADA14001EEB03 /* LoadingBattleView.cpp */; };
 		E23F681D1C1ADA14001EEB03 /* LoadingBattleView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E23F68121C1ADA14001EEB03 /* LoadingBattleView.cpp */; };
 		E23F681E1C1ADA14001EEB03 /* BaseScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E23F68161C1ADA14001EEB03 /* BaseScene.cpp */; };
@@ -76,6 +77,8 @@
 		E23F68261C1ADA35001EEB03 /* BaseView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E23F68241C1ADA35001EEB03 /* BaseView.cpp */; };
 		E23F68271C1ADA35001EEB03 /* BaseView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E23F68241C1ADA35001EEB03 /* BaseView.cpp */; };
 		E2468AE41C23D76F0055D572 /* BaseControl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2468AE21C23D76F0055D572 /* BaseControl.cpp */; };
+		E25702F41C3F68E800D9CA8F /* LoadingBattleControl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E25702F21C3F68E800D9CA8F /* LoadingBattleControl.cpp */; };
+		E25702FC1C3F6FA300D9CA8F /* LoginView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E25702FA1C3F6FA300D9CA8F /* LoginView.cpp */; };
 		ED545A7C1B68A1F400C3958E /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = ED545A7B1B68A1F400C3958E /* libiconv.dylib */; };
 		ED545A7E1B68A1FA00C3958E /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = ED545A7D1B68A1FA00C3958E /* libiconv.dylib */; };
 /* End PBXBuildFile section */
@@ -168,6 +171,8 @@
 		D44C620D132DFF430009C878 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		D44C620F132DFF4E0009C878 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		D6B0611A1803AB670077942B /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/CoreMotion.framework; sourceTree = DEVELOPER_DIR; };
+		E23281D51C2D2FC10044A504 /* ControlFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ControlFactory.cpp; sourceTree = "<group>"; };
+		E23281D61C2D2FC10044A504 /* ControlFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControlFactory.h; sourceTree = "<group>"; };
 		E23F68121C1ADA14001EEB03 /* LoadingBattleView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LoadingBattleView.cpp; sourceTree = "<group>"; };
 		E23F68131C1ADA14001EEB03 /* LoadingBattleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingBattleView.h; sourceTree = "<group>"; };
 		E23F68161C1ADA14001EEB03 /* BaseScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BaseScene.cpp; sourceTree = "<group>"; };
@@ -180,6 +185,10 @@
 		E23F68251C1ADA35001EEB03 /* BaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseView.h; sourceTree = "<group>"; };
 		E2468AE21C23D76F0055D572 /* BaseControl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BaseControl.cpp; sourceTree = "<group>"; };
 		E2468AE31C23D76F0055D572 /* BaseControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseControl.h; sourceTree = "<group>"; };
+		E25702F21C3F68E800D9CA8F /* LoadingBattleControl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LoadingBattleControl.cpp; sourceTree = "<group>"; };
+		E25702F31C3F68E800D9CA8F /* LoadingBattleControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingBattleControl.h; sourceTree = "<group>"; };
+		E25702FA1C3F6FA300D9CA8F /* LoginView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LoginView.cpp; sourceTree = "<group>"; };
+		E25702FB1C3F6FA300D9CA8F /* LoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginView.h; sourceTree = "<group>"; };
 		ED545A7B1B68A1F400C3958E /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.4.sdk/usr/lib/libiconv.dylib; sourceTree = DEVELOPER_DIR; };
 		ED545A7D1B68A1FA00C3958E /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -459,6 +468,8 @@
 			children = (
 				E2468AE21C23D76F0055D572 /* BaseControl.cpp */,
 				E2468AE31C23D76F0055D572 /* BaseControl.h */,
+				E23281D51C2D2FC10044A504 /* ControlFactory.cpp */,
+				E23281D61C2D2FC10044A504 /* ControlFactory.h */,
 			);
 			path = control;
 			sourceTree = "<group>";
@@ -475,6 +486,7 @@
 		E23F680E1C1ADA14001EEB03 /* game */ = {
 			isa = PBXGroup;
 			children = (
+				E25702F71C3F6F7000D9CA8F /* login */,
 				E23F680F1C1ADA14001EEB03 /* loading */,
 				E23F68141C1ADA14001EEB03 /* map */,
 			);
@@ -493,6 +505,8 @@
 		E23F68101C1ADA14001EEB03 /* control */ = {
 			isa = PBXGroup;
 			children = (
+				E25702F21C3F68E800D9CA8F /* LoadingBattleControl.cpp */,
+				E25702F31C3F68E800D9CA8F /* LoadingBattleControl.h */,
 			);
 			path = control;
 			sourceTree = "<group>";
@@ -524,6 +538,31 @@
 				E23F681B1C1ADA14001EEB03 /* LoadingScene.h */,
 			);
 			path = scene;
+			sourceTree = "<group>";
+		};
+		E25702F71C3F6F7000D9CA8F /* login */ = {
+			isa = PBXGroup;
+			children = (
+				E25702F81C3F6F8D00D9CA8F /* control */,
+				E25702F91C3F6F8D00D9CA8F /* view */,
+			);
+			path = login;
+			sourceTree = "<group>";
+		};
+		E25702F81C3F6F8D00D9CA8F /* control */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = control;
+			sourceTree = "<group>";
+		};
+		E25702F91C3F6F8D00D9CA8F /* view */ = {
+			isa = PBXGroup;
+			children = (
+				E25702FA1C3F6FA300D9CA8F /* LoginView.cpp */,
+				E25702FB1C3F6FA300D9CA8F /* LoginView.h */,
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -671,12 +710,15 @@
 				E23F68201C1ADA14001EEB03 /* BattleScene.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
+				E25702F41C3F68E800D9CA8F /* LoadingBattleControl.cpp in Sources */,
 				E23F681E1C1ADA14001EEB03 /* BaseScene.cpp in Sources */,
 				E23F68261C1ADA35001EEB03 /* BaseView.cpp in Sources */,
 				E23F68221C1ADA14001EEB03 /* LoadingScene.cpp in Sources */,
 				E23F681C1C1ADA14001EEB03 /* LoadingBattleView.cpp in Sources */,
 				E2468AE41C23D76F0055D572 /* BaseControl.cpp in Sources */,
+				E23281D71C2D2FC10044A504 /* ControlFactory.cpp in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
+				E25702FC1C3F6FA300D9CA8F /* LoginView.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

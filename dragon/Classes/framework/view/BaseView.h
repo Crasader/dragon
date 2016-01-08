@@ -30,8 +30,7 @@ protected:
     
     virtual void addEventListener() = 0;
 
-    //use before BaseView::init()
-    void setNeedBg(bool pNeedBg);
+    void setNeedBg(bool pNeedBg); //use before BaseView::init()
     
 private:
     void addTouchedBg();
