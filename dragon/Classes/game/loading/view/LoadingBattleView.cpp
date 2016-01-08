@@ -46,7 +46,7 @@ void LoadingBattleView::appendView()
     
 }
 
-void LoadingBattleView::addEventListener()
+void LoadingBattleView::addClickListener()
 {
     
 }

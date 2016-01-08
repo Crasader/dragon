@@ -28,7 +28,7 @@ public:
 protected:
     virtual void appendView() = 0;
     
-    virtual void addEventListener() = 0;
+    virtual void addClickListener() = 0;
 
     void setNeedBg(bool pNeedBg); //use before BaseView::init()
     

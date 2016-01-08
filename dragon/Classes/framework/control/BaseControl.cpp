@@ -19,9 +19,15 @@ BaseControl::~BaseControl()
     
 }
 
-bool BaseControl::init()
+bool BaseControl::init(int tag)
 {
+    this->createView();
+    
+    this->addViewOnLayer(tag);
+    
     this->addEvent();
+    
+    this->request();
     
     return true;
 }

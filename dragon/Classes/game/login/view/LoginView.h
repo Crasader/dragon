@@ -12,6 +12,8 @@
 #include <stdio.h>
 #include "cocos2d.h"
 #include "BaseView.h"
+#include "ui/UIButton.h"
+#include "ui/UITextField.h"
 
 class LoginView : public BaseView
 {
@@ -27,7 +29,14 @@ public:
 private:
     virtual void appendView();
     
-    virtual void addEventListener();
+    virtual void addClickListener();
+    
+private:
+    void onSendButtonClick(ui::Button *sender);
+
+private:
+    ui::Button      *_sendButton;
+    ui::TextField   *_sendText;
     
 };
 

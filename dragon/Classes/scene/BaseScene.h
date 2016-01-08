@@ -22,7 +22,7 @@ public:
     
     bool init() override;
     
-    virtual void showMe();
+//    virtual void showMe();
     
 protected:
     virtual void addLayerWithTag(int tag);

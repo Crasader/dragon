@@ -26,7 +26,7 @@ bool BaseView::init()
     //append my view
     this->appendView();
     
-    this->addEventListener();
+    this->addClickListener();
     
     this->addTouchedBg();
 

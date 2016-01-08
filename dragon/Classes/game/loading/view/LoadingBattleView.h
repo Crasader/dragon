@@ -27,7 +27,7 @@ public:
 private:
     virtual void appendView();
     
-    virtual void addEventListener();
+    virtual void addClickListener();
 };
 
 #endif /* defined(__dragon__LoadingBattleView__) */

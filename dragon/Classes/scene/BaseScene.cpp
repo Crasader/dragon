@@ -35,17 +35,18 @@ void BaseScene::addLayerWithTag(int tag)
     this->addChild(widget);
 }
 
-void  BaseScene::showMe()
-{
-    Director * director = Director::getInstance();
-    Scene *scene =  director->getRunningScene();
-    if (scene)
-    {
-        director->replaceScene(this);
-    }
-    else
-    {
-        director->runWithScene(this);
-    }
-}
+//void  BaseScene::showMe()
+//{
+//    Scene *runningScene = CCDirector::getInstance()->getRunningScene();
+//    if (runningScene)
+//    {
+//        CCDirector::getInstance()->replaceScene(this);
+//    }
+//    else
+//    {
+//        CCDirector::getInstance()->runWithScene(this);
+//    }
+//    Scene *runningScene2 = CCDirector::getInstance()->getRunningScene();
+//    CCLOG("");
+//}
 

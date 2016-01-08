@@ -22,11 +22,11 @@ public:
     
     ~BaseControl();
     
-    bool init();
+    bool init(int tag);
     
     void destroy();
 
-protected:
+private:
     //add view on target layer by tag
     void addViewOnLayer(int tag);
     
@@ -34,11 +34,13 @@ protected:
     
     virtual void createView() = 0;
     
+    virtual void request() = 0;
+    
     virtual void addEvent() = 0;
     
     virtual void removeEvent() = 0;
     
-private:
+protected:
     BaseView *_baseView;
     
 };
