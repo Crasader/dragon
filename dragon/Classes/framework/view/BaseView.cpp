@@ -40,13 +40,12 @@ void BaseView::addTouchedBg()
         _bg = ui::Layout::create();
         _bg->setBackGroundColorType(ui::Layout::BackGroundColorType::SOLID);
         _bg->setBackGroundColor(Color3B(0, 0, 0));
-        _bg->setBackGroundColorOpacity(125);
-        _bg->setContentSize(Size(1140, 640));
-        _bg->setTouchEnabled(true);
-        Vec2 pos = this->convertToNodeSpace(Vec2(0,0));
+        _bg->setOpacity(125);
+        _bg->setContentSize(CCDirector::getInstance()->getWinSize());
+        _bg->setLocalZOrder(-1);
+        Vec2 pos = this->convertToWorldSpace(Vec2(0, 0));
         _bg->setPosition(pos);
         this->addChild(_bg);
-        this->sortAllChildren();
     }
 }
 

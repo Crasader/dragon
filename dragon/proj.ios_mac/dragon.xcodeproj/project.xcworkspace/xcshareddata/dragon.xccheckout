@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>540DFB7B-7FD5-4B3C-94AC-C48FC383D637</string>
+	<key>IDESourceControlProjectName</key>
+	<string>dragon</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>39C4254A41F69937AA2325C7C9E4EB79275268A3</key>
+		<string>https://github.com/xingchong/dragon.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>dragon/proj.ios_mac/dragon.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>39C4254A41F69937AA2325C7C9E4EB79275268A3</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/xingchong/dragon.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>39C4254A41F69937AA2325C7C9E4EB79275268A3</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>39C4254A41F69937AA2325C7C9E4EB79275268A3</string>
+			<key>IDESourceControlWCCName</key>
+			<string>dragon</string>
+		</dict>
+	</array>
+</dict>
+</plist>
