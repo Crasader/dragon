@@ -89,6 +89,8 @@
 		E257030A1C3F9B0100D9CA8F /* LoginScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E25703021C3F8E1F00D9CA8F /* LoginScene.cpp */; };
 		E25703121C3FBB9900D9CA8F /* WebSocketService.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E25703101C3FBB9900D9CA8F /* WebSocketService.cpp */; };
 		E25703131C3FBF7800D9CA8F /* WebSocketService.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E25703101C3FBB9900D9CA8F /* WebSocketService.cpp */; };
+		E266D00D1C5779E900831474 /* NetworkDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E266D00B1C5779E900831474 /* NetworkDelegate.cpp */; };
+		E266D00E1C5779E900831474 /* NetworkDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E266D00B1C5779E900831474 /* NetworkDelegate.cpp */; };
 		ED545A7C1B68A1F400C3958E /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = ED545A7B1B68A1F400C3958E /* libiconv.dylib */; };
 		ED545A7E1B68A1FA00C3958E /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = ED545A7D1B68A1FA00C3958E /* libiconv.dylib */; };
 /* End PBXBuildFile section */
@@ -205,6 +207,8 @@
 		E25703031C3F8E1F00D9CA8F /* LoginScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginScene.h; sourceTree = "<group>"; };
 		E25703101C3FBB9900D9CA8F /* WebSocketService.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WebSocketService.cpp; sourceTree = "<group>"; };
 		E25703111C3FBB9900D9CA8F /* WebSocketService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebSocketService.h; sourceTree = "<group>"; };
+		E266D00B1C5779E900831474 /* NetworkDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NetworkDelegate.cpp; sourceTree = "<group>"; };
+		E266D00C1C5779E900831474 /* NetworkDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkDelegate.h; sourceTree = "<group>"; };
 		ED545A7B1B68A1F400C3958E /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.4.sdk/usr/lib/libiconv.dylib; sourceTree = DEVELOPER_DIR; };
 		ED545A7D1B68A1FA00C3958E /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -591,6 +595,8 @@
 			children = (
 				E25703101C3FBB9900D9CA8F /* WebSocketService.cpp */,
 				E25703111C3FBB9900D9CA8F /* WebSocketService.h */,
+				E266D00B1C5779E900831474 /* NetworkDelegate.cpp */,
+				E266D00C1C5779E900831474 /* NetworkDelegate.h */,
 			);
 			path = network;
 			sourceTree = "<group>";
@@ -748,6 +754,7 @@
 				E2468AE41C23D76F0055D572 /* BaseControl.cpp in Sources */,
 				E23281D71C2D2FC10044A504 /* ControlFactory.cpp in Sources */,
 				E25703011C3F864500D9CA8F /* LoginControl.cpp in Sources */,
+				E266D00D1C5779E900831474 /* NetworkDelegate.cpp in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
 				E25703121C3FBB9900D9CA8F /* WebSocketService.cpp in Sources */,
 				E25702FC1C3F6FA300D9CA8F /* LoginView.cpp in Sources */,
@@ -760,6 +767,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E25703131C3FBF7800D9CA8F /* WebSocketService.cpp in Sources */,
+				E266D00E1C5779E900831474 /* NetworkDelegate.cpp in Sources */,
 				E257030A1C3F9B0100D9CA8F /* LoginScene.cpp in Sources */,
 				E25703051C3F9A7D00D9CA8F /* BaseControl.cpp in Sources */,
 				E25703061C3F9A7D00D9CA8F /* ControlFactory.cpp in Sources */,

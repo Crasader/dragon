@@ -47,8 +47,16 @@ bool LoginView::init()
 void LoginView::appendView()
 {
     Size winSize = CCDirector::getInstance()->getWinSize();
+    _connectButton = ui::Button::create("res/image/button/button02_green.png");
+    _connectButton->setTitleFontSize(24);
+    _connectButton->setTitleText("connect");
+    _connectButton->setPosition(Vec2(600, winSize.height/2));
+    this->addChild(_connectButton);
+    
     _sendButton = ui::Button::create("res/image/button/button02_green.png");
-    _sendButton->setPosition(Vec2(winSize.width*3/4, winSize.height/2));
+    _sendButton->setTitleFontSize(24);
+    _sendButton->setTitleText("send");
+    _sendButton->setPosition(Vec2(800, winSize.height/2));
     this->addChild(_sendButton);
     
     _sendText = ui::TextField::create();
@@ -59,12 +67,21 @@ void LoginView::appendView()
 
 void LoginView::addClickListener()
 {
+    _connectButton->addClickEventListener([=](Ref *sender){this->onConnectButtonClick((ui::Button*)sender);});
     _sendButton->addClickEventListener([=](Ref *sender){this->onSendButtonClick((ui::Button*)sender);});
 }
 
+
+void LoginView::onConnectButtonClick(ui::Button *sender)
+{
+    CCLOG("onConnectButtonClick()................");
+    WebSocketService::getInstance();
+}
 
 void LoginView::onSendButtonClick(ui::Button *sender)
 {
     CCLOG("onSendButtonClick()................");
     WebSocketService::getInstance()->sendMessage();
 }
+
+

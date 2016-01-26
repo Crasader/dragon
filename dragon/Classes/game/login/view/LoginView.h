@@ -32,9 +32,11 @@ private:
     virtual void addClickListener();
     
 private:
+    void onConnectButtonClick(ui::Button *sender);
     void onSendButtonClick(ui::Button *sender);
 
 private:
+    ui::Button      *_connectButton;
     ui::Button      *_sendButton;
     ui::TextField   *_sendText;
     

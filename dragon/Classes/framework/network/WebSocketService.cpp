@@ -36,6 +36,7 @@ bool WebSocketService::init()
     
     std::string url = "ws://echo.websocket.org";
     url = "ws://192.168.191.2:7070";
+    url = "ws://127.0.0.1:7070";
     
     
     if (!_wsiSendBinary->init(*this, url))
@@ -50,7 +51,8 @@ void WebSocketService::sendMessage()
 {
     if (_wsiSendBinary->getReadyState() == network::WebSocket::State::OPEN)
     {
-        char buf[] = "Hello WebSocket,\0 I'm\0 a\0 binary\0 message\0.";
+//        char buf[] = "Hello WebSocket,\0 I'm\0 a\0 binary\0 message\0.";
+        char buf[] = "0";
         _wsiSendBinary->send((unsigned char*)buf, sizeof(buf));
     }
     else
