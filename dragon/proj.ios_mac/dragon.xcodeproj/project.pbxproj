@@ -91,6 +91,10 @@
 		E25703131C3FBF7800D9CA8F /* WebSocketService.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E25703101C3FBB9900D9CA8F /* WebSocketService.cpp */; };
 		E266D00D1C5779E900831474 /* NetworkDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E266D00B1C5779E900831474 /* NetworkDelegate.cpp */; };
 		E266D00E1C5779E900831474 /* NetworkDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E266D00B1C5779E900831474 /* NetworkDelegate.cpp */; };
+		E2C075871C747A3E00E444AA /* BattleManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2C075851C747A3E00E444AA /* BattleManager.cpp */; };
+		E2C075881C747A3E00E444AA /* BattleManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2C075851C747A3E00E444AA /* BattleManager.cpp */; };
+		E2C0758B1C747BBC00E444AA /* BattleMapUnits.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2C075891C747BBC00E444AA /* BattleMapUnits.cpp */; };
+		E2C0758C1C747BBC00E444AA /* BattleMapUnits.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2C075891C747BBC00E444AA /* BattleMapUnits.cpp */; };
 		ED545A7C1B68A1F400C3958E /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = ED545A7B1B68A1F400C3958E /* libiconv.dylib */; };
 		ED545A7E1B68A1FA00C3958E /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = ED545A7D1B68A1FA00C3958E /* libiconv.dylib */; };
 /* End PBXBuildFile section */
@@ -209,6 +213,10 @@
 		E25703111C3FBB9900D9CA8F /* WebSocketService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebSocketService.h; sourceTree = "<group>"; };
 		E266D00B1C5779E900831474 /* NetworkDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NetworkDelegate.cpp; sourceTree = "<group>"; };
 		E266D00C1C5779E900831474 /* NetworkDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkDelegate.h; sourceTree = "<group>"; };
+		E2C075851C747A3E00E444AA /* BattleManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BattleManager.cpp; sourceTree = "<group>"; };
+		E2C075861C747A3E00E444AA /* BattleManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BattleManager.h; sourceTree = "<group>"; };
+		E2C075891C747BBC00E444AA /* BattleMapUnits.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BattleMapUnits.cpp; sourceTree = "<group>"; };
+		E2C0758A1C747BBC00E444AA /* BattleMapUnits.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BattleMapUnits.h; sourceTree = "<group>"; };
 		ED545A7B1B68A1F400C3958E /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.4.sdk/usr/lib/libiconv.dylib; sourceTree = DEVELOPER_DIR; };
 		ED545A7D1B68A1FA00C3958E /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -414,6 +422,8 @@
 				E23F68071C1ADA14001EEB03 /* sprite */,
 				E23F68081C1ADA14001EEB03 /* state */,
 				E23F68091C1ADA14001EEB03 /* ui */,
+				E2C075851C747A3E00E444AA /* BattleManager.cpp */,
+				E2C075861C747A3E00E444AA /* BattleManager.h */,
 			);
 			path = battle;
 			sourceTree = "<group>";
@@ -449,6 +459,8 @@
 		E23F68071C1ADA14001EEB03 /* sprite */ = {
 			isa = PBXGroup;
 			children = (
+				E2C075891C747BBC00E444AA /* BattleMapUnits.cpp */,
+				E2C0758A1C747BBC00E444AA /* BattleMapUnits.h */,
 			);
 			path = sprite;
 			sourceTree = "<group>";
@@ -751,9 +763,11 @@
 				E23F68261C1ADA35001EEB03 /* BaseView.cpp in Sources */,
 				E23F68221C1ADA14001EEB03 /* LoadingScene.cpp in Sources */,
 				E23F681C1C1ADA14001EEB03 /* LoadingBattleView.cpp in Sources */,
+				E2C075871C747A3E00E444AA /* BattleManager.cpp in Sources */,
 				E2468AE41C23D76F0055D572 /* BaseControl.cpp in Sources */,
 				E23281D71C2D2FC10044A504 /* ControlFactory.cpp in Sources */,
 				E25703011C3F864500D9CA8F /* LoginControl.cpp in Sources */,
+				E2C0758B1C747BBC00E444AA /* BattleMapUnits.cpp in Sources */,
 				E266D00D1C5779E900831474 /* NetworkDelegate.cpp in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
 				E25703121C3FBB9900D9CA8F /* WebSocketService.cpp in Sources */,
@@ -775,9 +789,11 @@
 				E25703081C3F9A7D00D9CA8F /* LoginView.cpp in Sources */,
 				E25703091C3F9A7D00D9CA8F /* LoadingBattleControl.cpp in Sources */,
 				46880B8919C43A87006E1F66 /* AppDelegate.cpp in Sources */,
+				E2C075881C747A3E00E444AA /* BattleManager.cpp in Sources */,
 				E23F68211C1ADA14001EEB03 /* BattleScene.cpp in Sources */,
 				E23F681D1C1ADA14001EEB03 /* LoadingBattleView.cpp in Sources */,
 				E23F68231C1ADA14001EEB03 /* LoadingScene.cpp in Sources */,
+				E2C0758C1C747BBC00E444AA /* BattleMapUnits.cpp in Sources */,
 				E23F68271C1ADA35001EEB03 /* BaseView.cpp in Sources */,
 				503AE10517EB98FF00D1A890 /* main.cpp in Sources */,
 				E23F681F1C1ADA14001EEB03 /* BaseScene.cpp in Sources */,
