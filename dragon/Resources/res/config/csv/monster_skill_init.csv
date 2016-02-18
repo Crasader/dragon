@@ -1,0 +1,4 @@
+id,des,riseSkillId,skillIds,bornBuffIds,bornSkillIds
+NUMBER,STRING,NUMBER,ARRAY,ARRAY,ARRAY
+,,起身技能,基本技能,出生buff,出生技能
+1,测试数据怪物技能,,10001|10002,,

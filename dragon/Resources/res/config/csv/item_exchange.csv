@@ -1,0 +1,14 @@
+﻿id,type,input,inputNum,output,outputNum,costGold,costStone,rate
+STRING,STRING,STRING,STRING,STRING,STRING,STRING,STRING,STRING
+兑换id,"类型
+1-碎片兑换
+2-固定礼包
+3-概率礼包","输入物品
+多种用|隔开","输入物品数量
+多种用|隔开","输出物品
+多种用|隔开","输出物品数量
+多种用|隔开",花费金币     ,花费钻石,概率
+3,3,3,3,3,3,3,3,2
+10001,1,10101|10102,1|1,10103,1,0,0,100
+10002,1,1,1,1,1,0,0,100
+10003,1,1,1,1,1,0,0,100

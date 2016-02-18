@@ -1,0 +1,4 @@
+id,templateid,order,templateName,skeletonName,atlasName,skinName,resScale,resColor,resAlpha
+NUMBER,NUMBER,NUMBER,STRING,STRING,STRING,STRING,NUMBER,ARRAY,NUMBER
+10001,1,1,»ðÇò,spine/flyobj/wuqi/skeleton,spine/flyobj/wuqi/skeleton,,1,255|255|255,255
+20001,2,1,ÑÌÎí,spine/flyobj/yan/skeleton,spine/flyobj/yan/skeleton,,1,255|255|255,255

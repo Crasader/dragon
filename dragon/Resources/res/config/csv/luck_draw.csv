@@ -1,0 +1,9 @@
+﻿id,itemId,itemNum,playerLevelLimit,playerCarrer,moneyType,price,discount,precious,rate
+STRING,STRING,STRING,STRING,STRING,STRING,STRING,STRING,STRING,STRING
+奖池id,物品id,物品数量,玩家等级区间,职业限制,货币类型,货币数量,十连抽折扣,是否珍贵物品,权重
+3,3,3,3,3,3,3,,3,2
+100001,,,1-100,,,,,,
+
+
+
+,,,,,,,,,0

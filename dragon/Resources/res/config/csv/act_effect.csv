@@ -1,0 +1,16 @@
+id,res_id,skeletonActName,startPercent,endPercent,speedScale
+NUMBER,NUMBER,STRING,NUMBER,NUMBER,NUMBER
+
+10032,10001,attack_1,0,1,1
+10035,10001,attack_2,0,1,1
+10038,10001,attack_3,0,1,1
+10041,10001,attack_4,0,1,1
+10044,10001,attack_5,0,1,1
+30032,10002,attack_1,0.2,1,1
+30035,10002,attack_2,0.1,1,1
+30038,10002,attack_3,0.1,1,1
+30041,10002,attack_4,0,1,1
+30044,10002,attack_5,0,1,1
+100001,30001,animation,0,1,1
+100002,30002,animation,0,1,1
+100003,30003,animation,0,1,1

@@ -1,0 +1,5 @@
+id,type,unitId,monsterPos,bornEffectId,
+NUMBER,NUMBER,NUMBER,ARRAY,NUMBER,
+,类型（0怪物 ，1伙伴 ）,怪物或主角ID,怪物位置,出场效果,
+1,0,1,800|300,0
+2,0,1,800|500,0

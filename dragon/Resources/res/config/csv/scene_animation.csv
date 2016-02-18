@@ -1,0 +1,13 @@
+id,name,des,sceneId,layerTag,position
+NUMBER,STRING,STRING,NUMBER,NUMBER,STRING
+动画id,动画名字,描述,场景id,层tag,动画位置
+0,0,1,0,0,0
+1,bird.ExportJson,小鸟动画,10000,300,200|300
+2
+3
+4
+5
+6
+7
+8
+9

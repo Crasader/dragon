@@ -1,0 +1,4 @@
+id,triggerType,batchIds,batchTimeTrigger
+NUMBER,NUMBER,ARRAY,ARRAY
+,触发条件（0场景中没有活着的怪物触发）,批次列表,触发时间（单位秒 ）
+1,0,1,1

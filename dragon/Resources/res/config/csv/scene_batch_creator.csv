@@ -1,0 +1,5 @@
+id,unitType,unitIds,unitCnt,bornPos,bornType,carrierId
+NUMBER,NUMBER,ARRAY,ARRAY,ARRAY,NUMBER,NUMBER
+,怪物0或伙伴1,刷怪列表,刷怪数量,怪物随机出生位置,出生类型,承载体
+1,0,1|2|3,2|2|2,800|1600,0,0
+2,0,1|2|3,2|2|2,800|1600,0,0

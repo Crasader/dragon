@@ -1,0 +1,10 @@
+id,name,limitLevel,icon,fromImage,functionId,limitTaskId,tutorFunction,tutorSubFunction,fontIcon
+STRING,STRING,STRING,STRING,STRING,STRING,STRING,STRING,STRING,STRING
+1,装备强化,5,icon_zhanqianghua,UIICON,1,100502,6,1,fontbookstrengthening
+2,技能升级,25,icon_zhanjineng,UIICON,2,102502,4,,fontbookskill
+3,宝石镶嵌,15,icon_zhanbaoshi,UIICON,3,101503,6,2,fontbookdiamond
+4,宝石合成,25,icon_zhanbaoshihecheng,UIICON,4,102502,6,3,fontbooksynthesis
+5,装备培养,67,icon_zhanpeiyang,UIICON,5,106709,6,5,fontbookgeartrain
+6,时装合成,50,icon_zhanshizhuang,UIICON,6,105006,6,4,fontbookfashion
+7,法宝,61,icon_zhanfabao,UIICON,7,106101,15,,fontbookmagicweapon
+8,装备洗练,64,icon_zhanpeiyang,UIICON,8,106408,6,6,fontbookequipment

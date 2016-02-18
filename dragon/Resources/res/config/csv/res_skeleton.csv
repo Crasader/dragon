@@ -1,0 +1,6 @@
+id,templateid,order,templateName,skeletonName,atlasName,skinName,resScale,resColor,resAlpha
+NUMBER,NUMBER,NUMBER,STRING,STRING,STRING,STRING,NUMBER,ARRAY,NUMBER
+10001,1,1,Ö÷½Ç,spine/players/01/zhujue_xixuegui,spine/players/01/zhujue_xixuegui,,1,255|255|255,255
+10002,1,2,Ö÷½Ç¹Ö,spine/players/01/zhujue_xixuegui,spine/players/01/zhujue_xixuegui,,1,255|255|0,255
+20001,2,1,»ì»ì,spine/monsters/hunhun04/hunhun04,spine/monsters/hunhun04/hunhun04,1,1,255|255|255,255
+30001,3,1,Ö÷½Ç2,spine/players/02/dajian,spine/players/02/dajian,,1,255|255|255,255

@@ -1,0 +1,7 @@
+id,type,templateName,skeletonName,atlasName,skinName,resScale,resColor,resAlpha
+NUMBER,NUMBER,STRING,STRING,STRING,STRING,NUMBER,ARRAY,NUMBER
+10001,1,主角1动作特效,spine/act_effects/players/02/dajian,spine/act_effects/players/02/dajian,,1,255|255|255,255
+10002,1,主角2动作特效,spine/act_effects/players/02/dajian,spine/act_effects/players/02/dajian,,1,255|255|255,255
+30001,3,被击特效1,spine/act_effects/behit/1/skeleton,spine/act_effects/behit/1/skeleton,,1,255|255|255,255
+30002,3,被击特效2,spine/act_effects/behit/2/skeleton,spine/act_effects/behit/2/skeleton,,1,255|255|255,255
+30003,3,被击特效3,spine/act_effects/behit/3/skeleton,spine/act_effects/behit/3/skeleton,,1,255|255|255,255

@@ -1,0 +1,9 @@
+scendId,type,sceneName,fileName,sceneSize,playerBorn,borders,obstacleList,animationList,eventList
+NUMBER,NUMBER,STRING,STRING,STRING,STRING,STRING,STRING,STRING,STRING
+场景id,类型,名字,文件名,场景大小 ,出生点,逻辑边界,阻挡区域列表,"动态动画列表,竖线同时播",事件列表
+3,3,1,1,1,1,1,1,1,1
+10000,1,魅影屋顶,meiyingwuding,1600|640,100|50,1300|1500,1|2,1|3,1|2
+10001,1,盘丝洞,pansidong,2000|640,100|50,2000,4,1|3,1|2
+10002,1,月下城,yuexiacheng,3200|640,100|50,1300,7|8,1|3,1|2
+10003,1,街道,001jiedao,2105|780,100|50,1300|1500,9|10|11|12,1|2|3|4,1|2
+10004,1,六过道,b6guodao,3000|780,100|50,1300|1500,13|14,1|2|3|4,1|2
