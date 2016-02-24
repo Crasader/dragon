@@ -61,7 +61,7 @@ bool HCSVFile::createDBFromMemery(const char* pMemStart, const unsigned long dwS
 		return false;
 
 	
-	ConvertStringToVector(szLine, m_vecFieldName, ",");
+	convertStringToVector(szLine, m_vecFieldName, ",");
 	if(m_vecFieldName.empty())
 		return false;
 
@@ -75,7 +75,7 @@ bool HCSVFile::createDBFromMemery(const char* pMemStart, const unsigned long dwS
 	pMem = GetLineFromMemory(szLine, 1024*10, pMem, pMemEnd);
 	if(!pMem) 
 		return false;
-	ConvertStringToVector(szLine,m_vecFieldType,",");
+	convertStringToVector(szLine,m_vecFieldType,",");
 	if( m_vecFieldType.empty())
 		return false;
 
@@ -86,11 +86,11 @@ bool HCSVFile::createDBFromMemery(const char* pMemStart, const unsigned long dwS
 		if(!pMem) break;
 
 		DataSingleRecord  data;
-		ConvertStringToVector(szLine, data.m_vecData, ",");
+		convertStringToValueVector(szLine, data.m_vecData, ",");
 		if(data.m_vecData.empty())
 			continue;
 
-		int rowid =atoi((data.m_vecData)[0].c_str());		
+		int rowid =atoi((data.m_vecData)[0].asString().c_str());
 
 #ifdef WIN32
 		if (rowid > 100 &&  m_mapFileData.find(rowid) != m_mapFileData.end())
@@ -105,11 +105,11 @@ bool HCSVFile::createDBFromMemery(const char* pMemStart, const unsigned long dwS
 
 	}while(true);
 
-
 	return true;
-	
 }
-int	HCSVFile::ConvertStringToVector(const char* strSource, std::vector<string>& vRet, const char* szKey)
+
+
+int	HCSVFile::convertStringToVector(const char* strSource, std::vector<string>& vRet, const char* szKey)
 {
 	vRet.clear();
 	if(!strSource || !szKey)
@@ -143,6 +143,42 @@ int	HCSVFile::ConvertStringToVector(const char* strSource, std::vector<string>& 
 
 	return (int)vRet.size();
 }
+
+int	HCSVFile::convertStringToValueVector(const char* strSource, ValueVector& vRet, const char* szKey)
+{
+    vRet.clear();
+    if(!strSource || !szKey)
+        return 0;
+    string strSrc = strSource;
+    if(strSrc.empty())
+        return 0;
+    
+    string::size_type nLeft = 0;
+    string::size_type nRight = 0;
+    
+    nRight = strSrc.find(szKey);
+    if(nRight == wstring::npos)
+        nRight = strSrc.length();
+    
+    while(true)
+    {
+        string strItem = strSrc.substr(nLeft, nRight-nLeft);
+        if(strItem.length() > 0)
+            vRet.push_back(Value(strItem));
+        else
+            vRet.push_back(Value(""));
+        if(nRight == strSrc.length())
+            break;
+        nLeft = nRight + strlen(szKey);
+        nRight = strSrc.find(szKey, nLeft);
+        
+        if(nRight == string::npos)
+            nRight = strSrc.length();
+    }
+    
+    return (int)vRet.size();
+}
+
 const char*	HCSVFile::GetLineFromMemory(char* pStringBuf, int nBufSize, const char* pMemStart, const char* pMemEnd)
 {
 	const char* pMem = pMemStart;
@@ -156,10 +192,9 @@ const char*	HCSVFile::GetLineFromMemory(char* pStringBuf, int nBufSize, const ch
 		pMem++;
 	return pMem;
 }
-const char*	HCSVFile::getData(int id,const char* fieldName)
+
+Value HCSVFile::getData(int id, const char* fieldName)
 {
-
-
 #ifdef WIN32
 	if (id == 0 || id == -1)
 	{
@@ -178,28 +213,23 @@ const char*	HCSVFile::getData(int id,const char* fieldName)
 #ifdef WIN32
 		char temp[256] = "";
 		sprintf(temp,"在表格 %s 中,找不到字段 [%s] !!!",m_FileName.c_str(),fieldName);
-
-
 		MessageBoxA(0,temp,0,0);
 		//assert(false,temp);
 #endif
-		
-		return "";
+		return Value("");
 	}
-		
-	
 
 	map<int,DataSingleRecord>::iterator dataIt = m_mapFileData.find(id);
 	if (dataIt != m_mapFileData.end())
 	{
-		return dataIt->second.getData(colomIndex,m_FileName).c_str();
+		return dataIt->second.getData(colomIndex,m_FileName);
 	}
 #ifdef WIN32
 	char temp[256] = "";
 	sprintf(temp,"在表格 %s 中,找不到ID [%d] !!!",m_FileName.c_str(),id);
 	MessageBoxA(0,temp,0,0);
 #endif
-	return "";
+	return Value("");
 }   
 
 const char* HCSVFile::getDataType(const char* fieldName)
@@ -244,9 +274,6 @@ cocos2d::ValueMap HCSVFile::getRowData(int id)
 	else
 	{
 #ifdef WIN32
-
-
-		
 		int n = m_FileName.find_last_of("/");
 		string  s = m_FileName.substr(n+1,7);
 		if( s == "battle_")
@@ -264,27 +291,22 @@ cocos2d::ValueMap HCSVFile::getRowData(int id)
 	{
 		for (int i = 0; i< m_vecFieldName.size(); i++)
 		{
-			string key   = m_vecFieldName[i];
-			Value value = Value(data->getData(i,m_FileName));
-			rowMap[key] = value;
+			string key  = m_vecFieldName[i];
+			rowMap[key] = data->getData(i,m_FileName);
 		}
 	}
 	return rowMap;
-
 }
 
-vector<int> HCSVFile::getAllId()
+ValueVector HCSVFile::getAllId()
 {
-	using namespace cocos2d;
-	vector<int> IDs;
+	ValueVector idVector;
 	map<int,DataSingleRecord>::iterator it = m_mapFileData.begin();
 	for (;it != m_mapFileData.end(); it++)
 	{
-		IDs.push_back(it->first);
+		idVector.push_back(Value(it->first));
 	}
-	return IDs;
-
-
+	return idVector;
 }
 
 bool HCSVFile::openXlsFile(const char* fileName)

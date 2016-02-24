@@ -7,6 +7,9 @@
 //
 
 #include "HeroData.h"
+#include "ConfigReader.h"
+#include "HCSVFile.h"
+#include "Global.h"
 
 HeroData::HeroData()
 {
@@ -27,7 +30,7 @@ void HeroData::init(int guid, int configId, int unitType)
 
 void HeroData::initData()
 {
-    
+    HCSVFile *csvFile = ConfigReader::getInstance()->getFileByName(Global::Csv::playerInit);
 }
 
 void HeroData::initSkill()

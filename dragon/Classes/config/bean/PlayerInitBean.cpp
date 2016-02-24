@@ -7,6 +7,8 @@
 //
 
 #include "PlayerInitBean.h"
+#include "ConfigReader.h"
+#include "HCSVFile.h"
 
 static PlayerInitBean* create(int configId)
 {
@@ -41,7 +43,7 @@ bool PlayerInitBean::init(int configId)
     _resTemplateId = rowValueMap.at("resTemplateId").asInt();
     _resEffectId = rowValueMap.at("resEffectId").asInt();
     std::string temp = rowValueMap["skillInitIds"].asString();
-    _skillInitIds = this->stringToMutiVector(temp);
+//    _skillInitIds = this->stringToMutiVector(temp);
     _aiInitId = rowValueMap.at("aiInitId").asInt();
     
     return true;

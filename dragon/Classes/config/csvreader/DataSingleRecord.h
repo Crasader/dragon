@@ -14,14 +14,15 @@
 #include <vector>
 #include "cocos2d.h"
 
+USING_NS_CC;
+
 class DataSingleRecord
 {
 public:
-	const std::string& getData(int colomIndex,std::string& filename); 
+	const Value getData(int colomIndex, std::string& filename);
 public:
-    std::vector<std::string> m_vecData;
-
-	//static const char splitchar = '|';
+    
+    ValueVector m_vecData;
 };
 
 #endif /* defined(__XYGAME__DATASINGLERECORD__) */

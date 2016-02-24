@@ -9,7 +9,7 @@
 #include "CsvReader.h"
 #include "HCSVFile.h"
 
-CsvReader *CsvReader::s_instance = NULL;
+CsvReader *s_instance = NULL;
 
 CsvReader::CsvReader()
 {

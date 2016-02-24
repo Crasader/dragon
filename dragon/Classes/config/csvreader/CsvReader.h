@@ -28,7 +28,6 @@ public:
 	static void clear();
     
 private:
-    static CsvReader *s_instance;
     std::map<std::string,HCSVFile*> m_mapFiles;
 };
 

@@ -10,13 +10,13 @@
 #define __dragon__PlayerInitBean__
 
 #include <stdio.h>
-#include "BaseConfigBean.h"
 
 
 USING_NS_CC;
 using namespace std;
 
-class PlayerInitBean : public BaseConfigBean
+
+class PlayerInitBean : public Ref
 {
 public:
     static PlayerInitBean* create(int configId);
@@ -40,6 +40,8 @@ public:
     int getAiInitId(){return _aiInitId;};
     
 private:
+    int _configId;
+    std::string _fileName;
     int _id;
     std::string _name;
     int _resTemplateId;

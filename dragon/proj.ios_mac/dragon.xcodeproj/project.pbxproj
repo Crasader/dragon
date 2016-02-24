@@ -65,6 +65,10 @@
 		D44C620E132DFF430009C878 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620D132DFF430009C878 /* AVFoundation.framework */; };
 		D44C6210132DFF4E0009C878 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620F132DFF4E0009C878 /* AudioToolbox.framework */; };
 		D6B0611B1803AB670077942B /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6B0611A1803AB670077942B /* CoreMotion.framework */; };
+		E2284DF11C7D97AF00A7EA8D /* Global.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2284DEF1C7D97AF00A7EA8D /* Global.cpp */; };
+		E2284DF21C7D97AF00A7EA8D /* Global.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2284DEF1C7D97AF00A7EA8D /* Global.cpp */; };
+		E2284DF81C7DDD8300A7EA8D /* CsvConfig.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2284DF61C7DDD8300A7EA8D /* CsvConfig.cpp */; };
+		E2284DF91C7DDD8300A7EA8D /* CsvConfig.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2284DF61C7DDD8300A7EA8D /* CsvConfig.cpp */; };
 		E23281D71C2D2FC10044A504 /* ControlFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E23281D51C2D2FC10044A504 /* ControlFactory.cpp */; };
 		E23F681C1C1ADA14001EEB03 /* LoadingBattleView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E23F68121C1ADA14001EEB03 /* LoadingBattleView.cpp */; };
 		E23F681D1C1ADA14001EEB03 /* LoadingBattleView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E23F68121C1ADA14001EEB03 /* LoadingBattleView.cpp */; };
@@ -111,8 +115,6 @@
 		E2E06E1E1C75DE380028822A /* XlsReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2E06E151C75DE380028822A /* XlsReader.cpp */; };
 		E2E06E211C75DEC80028822A /* ConfigReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2E06E1F1C75DEC80028822A /* ConfigReader.cpp */; };
 		E2E06E221C75DEC80028822A /* ConfigReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2E06E1F1C75DEC80028822A /* ConfigReader.cpp */; };
-		E2E06E261C75E5FC0028822A /* BaseConfigBean.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2E06E241C75E5FC0028822A /* BaseConfigBean.cpp */; };
-		E2E06E271C75E5FC0028822A /* BaseConfigBean.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2E06E241C75E5FC0028822A /* BaseConfigBean.cpp */; };
 		E2E06E2A1C75E9D20028822A /* PlayerInitBean.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2E06E281C75E9D20028822A /* PlayerInitBean.cpp */; };
 		E2E06E2B1C75E9D20028822A /* PlayerInitBean.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2E06E281C75E9D20028822A /* PlayerInitBean.cpp */; };
 		ED545A7C1B68A1F400C3958E /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = ED545A7B1B68A1F400C3958E /* libiconv.dylib */; };
@@ -207,6 +209,10 @@
 		D44C620D132DFF430009C878 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		D44C620F132DFF4E0009C878 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		D6B0611A1803AB670077942B /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/CoreMotion.framework; sourceTree = DEVELOPER_DIR; };
+		E2284DEF1C7D97AF00A7EA8D /* Global.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Global.cpp; sourceTree = "<group>"; };
+		E2284DF01C7D97AF00A7EA8D /* Global.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Global.h; sourceTree = "<group>"; };
+		E2284DF61C7DDD8300A7EA8D /* CsvConfig.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CsvConfig.cpp; sourceTree = "<group>"; };
+		E2284DF71C7DDD8300A7EA8D /* CsvConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CsvConfig.h; sourceTree = "<group>"; };
 		E23281D51C2D2FC10044A504 /* ControlFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ControlFactory.cpp; sourceTree = "<group>"; };
 		E23281D61C2D2FC10044A504 /* ControlFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControlFactory.h; sourceTree = "<group>"; };
 		E23F68121C1ADA14001EEB03 /* LoadingBattleView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LoadingBattleView.cpp; sourceTree = "<group>"; };
@@ -253,8 +259,6 @@
 		E2E06E161C75DE380028822A /* XlsReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XlsReader.h; sourceTree = "<group>"; };
 		E2E06E1F1C75DEC80028822A /* ConfigReader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ConfigReader.cpp; sourceTree = "<group>"; };
 		E2E06E201C75DEC80028822A /* ConfigReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigReader.h; sourceTree = "<group>"; };
-		E2E06E241C75E5FC0028822A /* BaseConfigBean.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BaseConfigBean.cpp; sourceTree = "<group>"; };
-		E2E06E251C75E5FC0028822A /* BaseConfigBean.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseConfigBean.h; sourceTree = "<group>"; };
 		E2E06E281C75E9D20028822A /* PlayerInitBean.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PlayerInitBean.cpp; sourceTree = "<group>"; };
 		E2E06E291C75E9D20028822A /* PlayerInitBean.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerInitBean.h; sourceTree = "<group>"; };
 		ED545A7B1B68A1F400C3958E /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.4.sdk/usr/lib/libiconv.dylib; sourceTree = DEVELOPER_DIR; };
@@ -529,6 +533,8 @@
 				E257030F1C3FBB2400D9CA8F /* network */,
 				E23F680C1C1ADA14001EEB03 /* control */,
 				E23F680D1C1ADA14001EEB03 /* view */,
+				E2284DEF1C7D97AF00A7EA8D /* Global.cpp */,
+				E2284DF01C7D97AF00A7EA8D /* Global.h */,
 			);
 			path = framework;
 			sourceTree = "<group>";
@@ -675,9 +681,10 @@
 		E2E06E0C1C75DE380028822A /* bean */ = {
 			isa = PBXGroup;
 			children = (
-				E2E06E231C75E5E70028822A /* base */,
 				E2E06E281C75E9D20028822A /* PlayerInitBean.cpp */,
 				E2E06E291C75E9D20028822A /* PlayerInitBean.h */,
+				E2284DF61C7DDD8300A7EA8D /* CsvConfig.cpp */,
+				E2284DF71C7DDD8300A7EA8D /* CsvConfig.h */,
 			);
 			path = bean;
 			sourceTree = "<group>";
@@ -702,15 +709,6 @@
 				E2E06E161C75DE380028822A /* XlsReader.h */,
 			);
 			path = xlsreader;
-			sourceTree = "<group>";
-		};
-		E2E06E231C75E5E70028822A /* base */ = {
-			isa = PBXGroup;
-			children = (
-				E2E06E241C75E5FC0028822A /* BaseConfigBean.cpp */,
-				E2E06E251C75E5FC0028822A /* BaseConfigBean.h */,
-			);
-			path = base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -860,8 +858,8 @@
 				E2E06E1B1C75DE380028822A /* HCSVFile.cpp in Sources */,
 				E23F68201C1ADA14001EEB03 /* BattleScene.cpp in Sources */,
 				E2E06E2A1C75E9D20028822A /* PlayerInitBean.cpp in Sources */,
+				E2284DF11C7D97AF00A7EA8D /* Global.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
-				E2E06E261C75E5FC0028822A /* BaseConfigBean.cpp in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
 				E2C075A21C75B6EF00E444AA /* BattleBaseData.cpp in Sources */,
 				E25702F41C3F68E800D9CA8F /* LoadingBattleControl.cpp in Sources */,
@@ -882,6 +880,7 @@
 				E2E06E211C75DEC80028822A /* ConfigReader.cpp in Sources */,
 				E25703121C3FBB9900D9CA8F /* WebSocketService.cpp in Sources */,
 				E25702FC1C3F6FA300D9CA8F /* LoginView.cpp in Sources */,
+				E2284DF81C7DDD8300A7EA8D /* CsvConfig.cpp in Sources */,
 				E25703041C3F8E1F00D9CA8F /* LoginScene.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -892,7 +891,6 @@
 			files = (
 				E25703131C3FBF7800D9CA8F /* WebSocketService.cpp in Sources */,
 				E266D00E1C5779E900831474 /* NetworkDelegate.cpp in Sources */,
-				E2E06E271C75E5FC0028822A /* BaseConfigBean.cpp in Sources */,
 				E257030A1C3F9B0100D9CA8F /* LoginScene.cpp in Sources */,
 				E25703051C3F9A7D00D9CA8F /* BaseControl.cpp in Sources */,
 				E25703061C3F9A7D00D9CA8F /* ControlFactory.cpp in Sources */,
@@ -903,9 +901,11 @@
 				E2E06E1E1C75DE380028822A /* XlsReader.cpp in Sources */,
 				E2C075A31C75B6EF00E444AA /* BattleBaseData.cpp in Sources */,
 				46880B8919C43A87006E1F66 /* AppDelegate.cpp in Sources */,
+				E2284DF91C7DDD8300A7EA8D /* CsvConfig.cpp in Sources */,
 				E2E06E2B1C75E9D20028822A /* PlayerInitBean.cpp in Sources */,
 				E2C075A71C75B70800E444AA /* BattleUnitSprite.cpp in Sources */,
 				E2E06E1C1C75DE380028822A /* HCSVFile.cpp in Sources */,
+				E2284DF21C7D97AF00A7EA8D /* Global.cpp in Sources */,
 				E2C075881C747A3E00E444AA /* BattleManager.cpp in Sources */,
 				E23F68211C1ADA14001EEB03 /* BattleScene.cpp in Sources */,
 				E23F681D1C1ADA14001EEB03 /* LoadingBattleView.cpp in Sources */,
