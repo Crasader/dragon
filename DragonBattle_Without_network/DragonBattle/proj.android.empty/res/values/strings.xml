@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="app_name">格斗无双</string>
-    <string name="alert_dialog_exit_confirm">确定退出格斗无双？</string>
-    <string name="alert_positive_btn_txt">退出游戏</string>
-    <string name="alert_negative_btn_txt">继续游戏</string>
-    <string name="alert_ok_btn_txt">确定</string>
-</resources>
