@@ -11,6 +11,9 @@
 
 #include <stdio.h>
 #include "cocos2d.h"
+#include "ConfigReader.h"
+#include "HCSVFile.h"
+#include "Global.h"
 
 USING_NS_CC;
 
@@ -29,18 +32,18 @@ protected:
     int _resId;
     int _aiId;
     
-    int _moveSpeed;
+    float _moveSpeed;
     int _jumpSpeed;
     
     int _level;
     int _maxHp;
     int _curHp;
     int _attack;
-    int _deffense;
+    int _defense;
     int _hitRate;
     int _jouk;
     int _crit;
-    int _critRate;
+    float _critRate;
     int _agile;
     int _power;
     

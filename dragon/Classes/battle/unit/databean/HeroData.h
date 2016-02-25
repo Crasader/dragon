@@ -18,9 +18,12 @@ public:
     HeroData();
     ~HeroData();
     
-    virtual void init(int guid, int configId, int unitType);
+    virtual void init(int guid, int configId, int unitType) override;
     void initData();
     void initSkill();
+    
+private:
+    ValueVector _skillVector;
     
 };
 

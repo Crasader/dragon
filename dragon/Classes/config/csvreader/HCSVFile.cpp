@@ -61,7 +61,7 @@ bool HCSVFile::createDBFromMemery(const char* pMemStart, const unsigned long dwS
 		return false;
 
 	
-	convertStringToVector(szLine, m_vecFieldName, ",");
+	strToVector(szLine, m_vecFieldName, ",");
 	if(m_vecFieldName.empty())
 		return false;
 
@@ -75,7 +75,7 @@ bool HCSVFile::createDBFromMemery(const char* pMemStart, const unsigned long dwS
 	pMem = GetLineFromMemory(szLine, 1024*10, pMem, pMemEnd);
 	if(!pMem) 
 		return false;
-	convertStringToVector(szLine,m_vecFieldType,",");
+	strToVector(szLine,m_vecFieldType,",");
 	if( m_vecFieldType.empty())
 		return false;
 
@@ -86,7 +86,7 @@ bool HCSVFile::createDBFromMemery(const char* pMemStart, const unsigned long dwS
 		if(!pMem) break;
 
 		DataSingleRecord  data;
-		convertStringToValueVector(szLine, data.m_vecData, ",");
+		strToValueVector(szLine, data.m_vecData, ",");
 		if(data.m_vecData.empty())
 			continue;
 
@@ -109,7 +109,7 @@ bool HCSVFile::createDBFromMemery(const char* pMemStart, const unsigned long dwS
 }
 
 
-int	HCSVFile::convertStringToVector(const char* strSource, std::vector<string>& vRet, const char* szKey)
+int	HCSVFile::strToVector(const char* strSource, std::vector<string>& vRet, const char* szKey)
 {
 	vRet.clear();
 	if(!strSource || !szKey)
@@ -144,7 +144,7 @@ int	HCSVFile::convertStringToVector(const char* strSource, std::vector<string>& 
 	return (int)vRet.size();
 }
 
-int	HCSVFile::convertStringToValueVector(const char* strSource, ValueVector& vRet, const char* szKey)
+int	HCSVFile::strToValueVector(const char* strSource, ValueVector& vRet, const char* szKey)
 {
     vRet.clear();
     if(!strSource || !szKey)

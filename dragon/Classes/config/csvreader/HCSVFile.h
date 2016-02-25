@@ -33,8 +33,8 @@ public:
 	ValueVector getAllId();
     
 public:
-    int convertStringToVector(const char* strSource, std::vector<std::string>& vRet, const char* szKey);
-    int convertStringToValueVector(const char* strSource, ValueVector& vRet, const char* szKey);
+    int strToVector(const char* strSource, std::vector<std::string>& vRet, const char* szKey);
+    int strToValueVector(const char* strSource, ValueVector& vRet, const char* szKey);
     
 private:
 	bool createDBFromMemery(const char* pMemStart, const unsigned long dwSize);

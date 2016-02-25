@@ -1,5 +1,1 @@
-id,name,resTemplateId,resEffectId,skillInitId,aiInitId,social,level,moveSpeed,maxHp,attack,defense,staticfp,jouk,crit,agile,critCount,fight
-NUMBER,STRING,NUMBER,NUMBER,NUMBER,NUMBER,STRING,NUMBER,NUMBER,NUMBER,NUMBER,NUMBER,NUMBER,NUMBER,NUMBER,NUMBER,NUMBER,NUMBER
-1,¾ÅÎ²ºü,10002,0,1,1,4,10,160,600,10,40,0,0,0,0,0,0
-2,¾ÅÎ²ºü,10002,0,1,1,4,10,160,600,20,30,0,0,0,0,0,0
-3,¾ÅÎ²ºü,10002,0,1,1,4,10,160,900,30,20,0,0,0,0,0,0
+id,name,resTemplateId,resEffectId,skillInitId,aiInitId,social,level,moveSpeed,maxHp,attack,defense,hitRate,jouk,crit,agile,critRate,powerNUMBER,STRING,NUMBER,NUMBER,NUMBER,NUMBER,STRING,NUMBER,NUMBER,NUMBER,NUMBER,NUMBER,NUMBER,NUMBER,NUMBER,NUMBER,NUMBER,NUMBER1,¾ÅÎ²ºü,10002,0,1,1,4,10,160,600,10,40,0,0,0,0,0,02,¾ÅÎ²ºü,10002,0,1,1,4,10,160,600,20,30,0,0,0,0,0,03,¾ÅÎ²ºü,10002,0,1,1,4,10,160,900,30,20,0,0,0,0,0,0
