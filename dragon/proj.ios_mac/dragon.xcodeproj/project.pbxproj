@@ -121,6 +121,8 @@
 		E2F993751C7F2BB500951CDE /* MonsterData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2F9936C1C7F2BB500951CDE /* MonsterData.cpp */; };
 		E2F993781C7F2D5000951CDE /* MapObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2F993761C7F2D5000951CDE /* MapObject.cpp */; };
 		E2F993791C7F2D5000951CDE /* MapObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2F993761C7F2D5000951CDE /* MapObject.cpp */; };
+		E2F9937C1C807A1B00951CDE /* MapSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2F9937A1C807A1B00951CDE /* MapSprite.cpp */; };
+		E2F9937D1C807A1B00951CDE /* MapSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2F9937A1C807A1B00951CDE /* MapSprite.cpp */; };
 		ED545A7C1B68A1F400C3958E /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = ED545A7B1B68A1F400C3958E /* libiconv.dylib */; };
 		ED545A7E1B68A1FA00C3958E /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = ED545A7D1B68A1FA00C3958E /* libiconv.dylib */; };
 /* End PBXBuildFile section */
@@ -269,6 +271,8 @@
 		E2F9936D1C7F2BB500951CDE /* MonsterData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MonsterData.h; sourceTree = "<group>"; };
 		E2F993761C7F2D5000951CDE /* MapObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MapObject.cpp; sourceTree = "<group>"; };
 		E2F993771C7F2D5000951CDE /* MapObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapObject.h; sourceTree = "<group>"; };
+		E2F9937A1C807A1B00951CDE /* MapSprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MapSprite.cpp; sourceTree = "<group>"; };
+		E2F9937B1C807A1B00951CDE /* MapSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapSprite.h; sourceTree = "<group>"; };
 		ED545A7B1B68A1F400C3958E /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.4.sdk/usr/lib/libiconv.dylib; sourceTree = DEVELOPER_DIR; };
 		ED545A7D1B68A1FA00C3958E /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -714,6 +718,8 @@
 				E2F993661C7F2BB500951CDE /* BattleUnitSprite.h */,
 				E2F993761C7F2D5000951CDE /* MapObject.cpp */,
 				E2F993771C7F2D5000951CDE /* MapObject.h */,
+				E2F9937A1C807A1B00951CDE /* MapSprite.cpp */,
+				E2F9937B1C807A1B00951CDE /* MapSprite.h */,
 			);
 			path = unit;
 			sourceTree = "<group>";
@@ -902,6 +908,7 @@
 				E25703121C3FBB9900D9CA8F /* WebSocketService.cpp in Sources */,
 				E25702FC1C3F6FA300D9CA8F /* LoginView.cpp in Sources */,
 				E2F993721C7F2BB500951CDE /* HeroData.cpp in Sources */,
+				E2F9937C1C807A1B00951CDE /* MapSprite.cpp in Sources */,
 				E2284DF81C7DDD8300A7EA8D /* CsvConfig.cpp in Sources */,
 				E25703041C3F8E1F00D9CA8F /* LoginScene.cpp in Sources */,
 			);
@@ -934,6 +941,7 @@
 				E23F681D1C1ADA14001EEB03 /* LoadingBattleView.cpp in Sources */,
 				E2E06E181C75DE380028822A /* CsvReader.cpp in Sources */,
 				E23F68231C1ADA14001EEB03 /* LoadingScene.cpp in Sources */,
+				E2F9937D1C807A1B00951CDE /* MapSprite.cpp in Sources */,
 				E2C0759F1C75B6B400E444AA /* BattleMapUnits.cpp in Sources */,
 				E23F68271C1ADA35001EEB03 /* BaseView.cpp in Sources */,
 				E2E06E1A1C75DE380028822A /* DataSingleRecord.cpp in Sources */,

@@ -20,11 +20,25 @@ class MapObject : public Node
 public:
     MapObject();
     ~MapObject();
-    
+
+public:
     virtual bool init();
     virtual void destroy();
     virtual void update(float dt);
     virtual void setPauseTime(float pauseTime);
+    virtual bool isHasDelay(float dt);
+    virtual void pauseAction();
+    virtual void resumeAction();
+    virtual void adjuestPosition(Vec2 point);
+    virtual void setLogicPosition(Vec2 point);
+    virtual void setCollideRange(Size size);
+    
+    virtual void setLogicAnchorPoint(Vec2 point){_curAnchorPoint = point;};
+    virtual Size getCollideRange(){return _collideRect.size;};
+    virtual Rect getCollideRect(){return _collideRect;};
+    
+    void updateMovePt(float dt);
+    
     
 private:
     int      _id;
