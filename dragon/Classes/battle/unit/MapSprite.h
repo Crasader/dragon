@@ -30,6 +30,12 @@ public:
     virtual void update(float dt);
     virtual void setCollideRange(Size rect) override;
     
+    virtual bool isOnLand();
+    virtual void onFinishAniCallback(float actionId, std::string actionName);
+    virtual void onBreakAniCallback(ValueMap config);
+    virtual void onRemoveEffectAni();
+    virtual void resetAniCallback();
+    
     void showRectColor();
     void playRepeatForever(int actionId);
     void playOnce(int actionId);
@@ -42,11 +48,7 @@ public:
     void setToRight(bool toRight);
     bool getIsFlipX();
     void setFlipx(bool isFlip);
-    bool isOnLand();
-    void onFinishAniCallback(float actionId, std::string actionName);
-    void onBreakAniCallback(ValueMap config);
-    void onRemoveEffectAni();
-    void resetAniCallback();
+    
     
 private:
     int        _spriteId;

@@ -22,22 +22,23 @@ public:
     ~MapObject();
 
 public:
-    virtual bool init();
+    virtual bool init() override;
+    virtual void update(float dt) override;
+    
+    virtual void updateMovePt(float dt);
     virtual void destroy();
-    virtual void update(float dt);
     virtual void setPauseTime(float pauseTime);
     virtual bool isHasDelay(float dt);
     virtual void pauseAction();
     virtual void resumeAction();
-    virtual void adjuestPosition(Vec2 point);
-    virtual void setLogicPosition(Vec2 point);
-    virtual void setCollideRange(Size size);
     
     virtual void setLogicAnchorPoint(Vec2 point){_curAnchorPoint = point;};
+    virtual void setLogicPosition(Vec2 point);
+    virtual void adjuestPosition(Vec2 point);
+    
+    virtual void setCollideRange(Size size);
     virtual Size getCollideRange(){return _collideRect.size;};
     virtual Rect getCollideRect(){return _collideRect;};
-    
-    void updateMovePt(float dt);
     
     
 private:
