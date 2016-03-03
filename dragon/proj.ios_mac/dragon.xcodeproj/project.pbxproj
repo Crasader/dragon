@@ -71,6 +71,16 @@
 		E207212D1C86EE5900A05CEF /* MapObstacle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E207212A1C86EE5800A05CEF /* MapObstacle.cpp */; };
 		E20721301C86EF0F00A05CEF /* MapLand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E207212E1C86EF0F00A05CEF /* MapLand.cpp */; };
 		E20721311C86EF0F00A05CEF /* MapLand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E207212E1C86EF0F00A05CEF /* MapLand.cpp */; };
+		E218F2EE1C875F50000E9479 /* BattleFieldLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E218F2EC1C875F50000E9479 /* BattleFieldLayer.cpp */; };
+		E218F2EF1C875F50000E9479 /* BattleFieldLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E218F2EC1C875F50000E9479 /* BattleFieldLayer.cpp */; };
+		E218F2F21C875F73000E9479 /* BattleFieldControl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E218F2F01C875F73000E9479 /* BattleFieldControl.cpp */; };
+		E218F2F31C875F73000E9479 /* BattleFieldControl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E218F2F01C875F73000E9479 /* BattleFieldControl.cpp */; };
+		E218F2F71C876106000E9479 /* MonsterContainer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E218F2F51C876106000E9479 /* MonsterContainer.cpp */; };
+		E218F2F81C876106000E9479 /* MonsterContainer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E218F2F51C876106000E9479 /* MonsterContainer.cpp */; };
+		E218F2FB1C876122000E9479 /* HeroContainer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E218F2F91C876122000E9479 /* HeroContainer.cpp */; };
+		E218F2FC1C876122000E9479 /* HeroContainer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E218F2F91C876122000E9479 /* HeroContainer.cpp */; };
+		E218F2FF1C876132000E9479 /* ObstacleContainer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E218F2FD1C876132000E9479 /* ObstacleContainer.cpp */; };
+		E218F3001C876132000E9479 /* ObstacleContainer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E218F2FD1C876132000E9479 /* ObstacleContainer.cpp */; };
 		E2284DF11C7D97AF00A7EA8D /* Global.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2284DEF1C7D97AF00A7EA8D /* Global.cpp */; };
 		E2284DF21C7D97AF00A7EA8D /* Global.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2284DEF1C7D97AF00A7EA8D /* Global.cpp */; };
 		E2284DF81C7DDD8300A7EA8D /* CsvConfig.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2284DF61C7DDD8300A7EA8D /* CsvConfig.cpp */; };
@@ -103,8 +113,6 @@
 		E266D00E1C5779E900831474 /* NetworkDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E266D00B1C5779E900831474 /* NetworkDelegate.cpp */; };
 		E2C075871C747A3E00E444AA /* BattleManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2C075851C747A3E00E444AA /* BattleManager.cpp */; };
 		E2C075881C747A3E00E444AA /* BattleManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2C075851C747A3E00E444AA /* BattleManager.cpp */; };
-		E2C0759E1C75B6B400E444AA /* BattleMapUnits.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2C0759C1C75B6B400E444AA /* BattleMapUnits.cpp */; };
-		E2C0759F1C75B6B400E444AA /* BattleMapUnits.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2C0759C1C75B6B400E444AA /* BattleMapUnits.cpp */; };
 		E2E06E171C75DE380028822A /* CsvReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2E06E0E1C75DE380028822A /* CsvReader.cpp */; };
 		E2E06E181C75DE380028822A /* CsvReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2E06E0E1C75DE380028822A /* CsvReader.cpp */; };
 		E2E06E191C75DE380028822A /* DataSingleRecord.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2E06E101C75DE380028822A /* DataSingleRecord.cpp */; };
@@ -227,6 +235,16 @@
 		E207212B1C86EE5900A05CEF /* MapObstacle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapObstacle.h; sourceTree = "<group>"; };
 		E207212E1C86EF0F00A05CEF /* MapLand.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MapLand.cpp; sourceTree = "<group>"; };
 		E207212F1C86EF0F00A05CEF /* MapLand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapLand.h; sourceTree = "<group>"; };
+		E218F2EC1C875F50000E9479 /* BattleFieldLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BattleFieldLayer.cpp; sourceTree = "<group>"; };
+		E218F2ED1C875F50000E9479 /* BattleFieldLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BattleFieldLayer.h; sourceTree = "<group>"; };
+		E218F2F01C875F73000E9479 /* BattleFieldControl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BattleFieldControl.cpp; sourceTree = "<group>"; };
+		E218F2F11C875F73000E9479 /* BattleFieldControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BattleFieldControl.h; sourceTree = "<group>"; };
+		E218F2F51C876106000E9479 /* MonsterContainer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MonsterContainer.cpp; sourceTree = "<group>"; };
+		E218F2F61C876106000E9479 /* MonsterContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MonsterContainer.h; sourceTree = "<group>"; };
+		E218F2F91C876122000E9479 /* HeroContainer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HeroContainer.cpp; sourceTree = "<group>"; };
+		E218F2FA1C876122000E9479 /* HeroContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeroContainer.h; sourceTree = "<group>"; };
+		E218F2FD1C876132000E9479 /* ObstacleContainer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ObstacleContainer.cpp; sourceTree = "<group>"; };
+		E218F2FE1C876132000E9479 /* ObstacleContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObstacleContainer.h; sourceTree = "<group>"; };
 		E2284DEF1C7D97AF00A7EA8D /* Global.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Global.cpp; sourceTree = "<group>"; };
 		E2284DF01C7D97AF00A7EA8D /* Global.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Global.h; sourceTree = "<group>"; };
 		E2284DF61C7DDD8300A7EA8D /* CsvConfig.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CsvConfig.cpp; sourceTree = "<group>"; };
@@ -259,8 +277,6 @@
 		E266D00C1C5779E900831474 /* NetworkDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkDelegate.h; sourceTree = "<group>"; };
 		E2C075851C747A3E00E444AA /* BattleManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BattleManager.cpp; sourceTree = "<group>"; };
 		E2C075861C747A3E00E444AA /* BattleManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BattleManager.h; sourceTree = "<group>"; };
-		E2C0759C1C75B6B400E444AA /* BattleMapUnits.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BattleMapUnits.cpp; sourceTree = "<group>"; };
-		E2C0759D1C75B6B400E444AA /* BattleMapUnits.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BattleMapUnits.h; sourceTree = "<group>"; };
 		E2E06E0E1C75DE380028822A /* CsvReader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CsvReader.cpp; sourceTree = "<group>"; };
 		E2E06E0F1C75DE380028822A /* CsvReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CsvReader.h; sourceTree = "<group>"; };
 		E2E06E101C75DE380028822A /* DataSingleRecord.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DataSingleRecord.cpp; sourceTree = "<group>"; };
@@ -480,17 +496,48 @@
 			path = ios;
 			sourceTree = SOURCE_ROOT;
 		};
+		E218F2E61C875EAC000E9479 /* control */ = {
+			isa = PBXGroup;
+			children = (
+				E218F2F01C875F73000E9479 /* BattleFieldControl.cpp */,
+				E218F2F11C875F73000E9479 /* BattleFieldControl.h */,
+			);
+			path = control;
+			sourceTree = "<group>";
+		};
+		E218F2E71C875EAC000E9479 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				E218F2EC1C875F50000E9479 /* BattleFieldLayer.cpp */,
+				E218F2ED1C875F50000E9479 /* BattleFieldLayer.h */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		E218F2F41C8760EA000E9479 /* container */ = {
+			isa = PBXGroup;
+			children = (
+				E218F2F51C876106000E9479 /* MonsterContainer.cpp */,
+				E218F2F61C876106000E9479 /* MonsterContainer.h */,
+				E218F2F91C876122000E9479 /* HeroContainer.cpp */,
+				E218F2FA1C876122000E9479 /* HeroContainer.h */,
+				E218F2FD1C876132000E9479 /* ObstacleContainer.cpp */,
+				E218F2FE1C876132000E9479 /* ObstacleContainer.h */,
+			);
+			path = container;
+			sourceTree = "<group>";
+		};
 		E23F68021C1ADA14001EEB03 /* battle */ = {
 			isa = PBXGroup;
 			children = (
+				E218F2F41C8760EA000E9479 /* container */,
+				E218F2E61C875EAC000E9479 /* control */,
+				E218F2E71C875EAC000E9479 /* view */,
 				E2F993641C7F2BB500951CDE /* unit */,
-				E2C0759B1C75B6B400E444AA /* mapunit */,
 				E23F68031C1ADA14001EEB03 /* ai */,
 				E23F68041C1ADA14001EEB03 /* collision */,
-				E23F68051C1ADA14001EEB03 /* control */,
 				E23F68061C1ADA14001EEB03 /* effect */,
 				E23F68081C1ADA14001EEB03 /* state */,
-				E23F68091C1ADA14001EEB03 /* ui */,
 				E2C075851C747A3E00E444AA /* BattleManager.cpp */,
 				E2C075861C747A3E00E444AA /* BattleManager.h */,
 			);
@@ -511,13 +558,6 @@
 			path = collision;
 			sourceTree = "<group>";
 		};
-		E23F68051C1ADA14001EEB03 /* control */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = control;
-			sourceTree = "<group>";
-		};
 		E23F68061C1ADA14001EEB03 /* effect */ = {
 			isa = PBXGroup;
 			children = (
@@ -530,13 +570,6 @@
 			children = (
 			);
 			path = state;
-			sourceTree = "<group>";
-		};
-		E23F68091C1ADA14001EEB03 /* ui */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ui;
 			sourceTree = "<group>";
 		};
 		E23F680A1C1ADA14001EEB03 /* config */ = {
@@ -678,15 +711,6 @@
 				E266D00C1C5779E900831474 /* NetworkDelegate.h */,
 			);
 			path = network;
-			sourceTree = "<group>";
-		};
-		E2C0759B1C75B6B400E444AA /* mapunit */ = {
-			isa = PBXGroup;
-			children = (
-				E2C0759C1C75B6B400E444AA /* BattleMapUnits.cpp */,
-				E2C0759D1C75B6B400E444AA /* BattleMapUnits.h */,
-			);
-			path = mapunit;
 			sourceTree = "<group>";
 		};
 		E2E06E0C1C75DE380028822A /* bean */ = {
@@ -904,6 +928,8 @@
 				E23F68201C1ADA14001EEB03 /* BattleScene.cpp in Sources */,
 				E2E06E2A1C75E9D20028822A /* PlayerInitBean.cpp in Sources */,
 				E2284DF11C7D97AF00A7EA8D /* Global.cpp in Sources */,
+				E218F2EE1C875F50000E9479 /* BattleFieldLayer.cpp in Sources */,
+				E218F2FB1C876122000E9479 /* HeroContainer.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
 				E207212C1C86EE5900A05CEF /* MapObstacle.cpp in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
@@ -921,8 +947,10 @@
 				E2F993781C7F2D5000951CDE /* MapObject.cpp in Sources */,
 				E2468AE41C23D76F0055D572 /* BaseControl.cpp in Sources */,
 				E23281D71C2D2FC10044A504 /* ControlFactory.cpp in Sources */,
+				E218F2F21C875F73000E9479 /* BattleFieldControl.cpp in Sources */,
 				E25703011C3F864500D9CA8F /* LoginControl.cpp in Sources */,
-				E2C0759E1C75B6B400E444AA /* BattleMapUnits.cpp in Sources */,
+				E218F2F71C876106000E9479 /* MonsterContainer.cpp in Sources */,
+				E218F2FF1C876132000E9479 /* ObstacleContainer.cpp in Sources */,
 				E266D00D1C5779E900831474 /* NetworkDelegate.cpp in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
 				E2E06E211C75DEC80028822A /* ConfigReader.cpp in Sources */,
@@ -939,8 +967,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E218F2F31C875F73000E9479 /* BattleFieldControl.cpp in Sources */,
 				E25703131C3FBF7800D9CA8F /* WebSocketService.cpp in Sources */,
 				E266D00E1C5779E900831474 /* NetworkDelegate.cpp in Sources */,
+				E218F2EF1C875F50000E9479 /* BattleFieldLayer.cpp in Sources */,
 				E257030A1C3F9B0100D9CA8F /* LoginScene.cpp in Sources */,
 				E25703051C3F9A7D00D9CA8F /* BaseControl.cpp in Sources */,
 				E20721291C86B1C400A05CEF /* HeroSprite.cpp in Sources */,
@@ -954,6 +984,7 @@
 				46880B8919C43A87006E1F66 /* AppDelegate.cpp in Sources */,
 				E2284DF91C7DDD8300A7EA8D /* CsvConfig.cpp in Sources */,
 				E2E06E2B1C75E9D20028822A /* PlayerInitBean.cpp in Sources */,
+				E218F2FC1C876122000E9479 /* HeroContainer.cpp in Sources */,
 				E2F993791C7F2D5000951CDE /* MapObject.cpp in Sources */,
 				E2E06E1C1C75DE380028822A /* HCSVFile.cpp in Sources */,
 				E2284DF21C7D97AF00A7EA8D /* Global.cpp in Sources */,
@@ -964,12 +995,13 @@
 				E2F993711C7F2BB500951CDE /* BattleBaseData.cpp in Sources */,
 				E23F681D1C1ADA14001EEB03 /* LoadingBattleView.cpp in Sources */,
 				E2E06E181C75DE380028822A /* CsvReader.cpp in Sources */,
+				E218F3001C876132000E9479 /* ObstacleContainer.cpp in Sources */,
 				E23F68231C1ADA14001EEB03 /* LoadingScene.cpp in Sources */,
 				E2F9937D1C807A1B00951CDE /* MapSprite.cpp in Sources */,
-				E2C0759F1C75B6B400E444AA /* BattleMapUnits.cpp in Sources */,
 				E23F68271C1ADA35001EEB03 /* BaseView.cpp in Sources */,
 				E2E06E1A1C75DE380028822A /* DataSingleRecord.cpp in Sources */,
 				503AE10517EB98FF00D1A890 /* main.cpp in Sources */,
+				E218F2F81C876106000E9479 /* MonsterContainer.cpp in Sources */,
 				E2F993731C7F2BB500951CDE /* HeroData.cpp in Sources */,
 				E2F9936F1C7F2BB500951CDE /* BattleUnitSprite.cpp in Sources */,
 				E23F681F1C1ADA14001EEB03 /* BaseScene.cpp in Sources */,
