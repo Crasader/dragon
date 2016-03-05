@@ -20,7 +20,7 @@ class BaseControl : public Ref
 public:
     BaseControl();
     
-    ~BaseControl();
+    virtual ~BaseControl();
     
     bool init(int tag);
     

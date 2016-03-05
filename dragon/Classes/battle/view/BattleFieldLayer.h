@@ -30,9 +30,9 @@ public:
     
 private:
     MonsterContainer     *_monsterContainer;
-    HeroContainer           *_heroContainer;
-    ObstacleContainer     *_obstacleContainer;
-    HeroSprite                *_myHero;
+    HeroContainer        *_heroContainer;
+    ObstacleContainer    *_obstacleContainer;
+    HeroSprite           *_myHero;
     
 };
 

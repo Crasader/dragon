@@ -109,6 +109,8 @@
 		E257030A1C3F9B0100D9CA8F /* LoginScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E25703021C3F8E1F00D9CA8F /* LoginScene.cpp */; };
 		E25703121C3FBB9900D9CA8F /* WebSocketService.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E25703101C3FBB9900D9CA8F /* WebSocketService.cpp */; };
 		E25703131C3FBF7800D9CA8F /* WebSocketService.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E25703101C3FBB9900D9CA8F /* WebSocketService.cpp */; };
+		E25AA9061C892C8200584B5A /* XYRichText.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E25AA9041C892C8200584B5A /* XYRichText.cpp */; };
+		E25AA9071C892C8200584B5A /* XYRichText.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E25AA9041C892C8200584B5A /* XYRichText.cpp */; };
 		E266D00D1C5779E900831474 /* NetworkDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E266D00B1C5779E900831474 /* NetworkDelegate.cpp */; };
 		E266D00E1C5779E900831474 /* NetworkDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E266D00B1C5779E900831474 /* NetworkDelegate.cpp */; };
 		E2C075871C747A3E00E444AA /* BattleManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2C075851C747A3E00E444AA /* BattleManager.cpp */; };
@@ -273,6 +275,8 @@
 		E25703031C3F8E1F00D9CA8F /* LoginScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginScene.h; sourceTree = "<group>"; };
 		E25703101C3FBB9900D9CA8F /* WebSocketService.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WebSocketService.cpp; sourceTree = "<group>"; };
 		E25703111C3FBB9900D9CA8F /* WebSocketService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebSocketService.h; sourceTree = "<group>"; };
+		E25AA9041C892C8200584B5A /* XYRichText.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XYRichText.cpp; sourceTree = "<group>"; };
+		E25AA9051C892C8200584B5A /* XYRichText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYRichText.h; sourceTree = "<group>"; };
 		E266D00B1C5779E900831474 /* NetworkDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NetworkDelegate.cpp; sourceTree = "<group>"; };
 		E266D00C1C5779E900831474 /* NetworkDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkDelegate.h; sourceTree = "<group>"; };
 		E2C075851C747A3E00E444AA /* BattleManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BattleManager.cpp; sourceTree = "<group>"; };
@@ -437,6 +441,7 @@
 		46880B8319C43A87006E1F66 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				E25AA9031C892C8200584B5A /* component */,
 				E23F68021C1ADA14001EEB03 /* battle */,
 				E23F680A1C1ADA14001EEB03 /* config */,
 				E23F680B1C1ADA14001EEB03 /* framework */,
@@ -713,6 +718,15 @@
 			path = network;
 			sourceTree = "<group>";
 		};
+		E25AA9031C892C8200584B5A /* component */ = {
+			isa = PBXGroup;
+			children = (
+				E25AA9041C892C8200584B5A /* XYRichText.cpp */,
+				E25AA9051C892C8200584B5A /* XYRichText.h */,
+			);
+			path = component;
+			sourceTree = "<group>";
+		};
 		E2E06E0C1C75DE380028822A /* bean */ = {
 			isa = PBXGroup;
 			children = (
@@ -956,6 +970,7 @@
 				E2E06E211C75DEC80028822A /* ConfigReader.cpp in Sources */,
 				E25703121C3FBB9900D9CA8F /* WebSocketService.cpp in Sources */,
 				E25702FC1C3F6FA300D9CA8F /* LoginView.cpp in Sources */,
+				E25AA9061C892C8200584B5A /* XYRichText.cpp in Sources */,
 				E2F993721C7F2BB500951CDE /* HeroData.cpp in Sources */,
 				E2F9937C1C807A1B00951CDE /* MapSprite.cpp in Sources */,
 				E2284DF81C7DDD8300A7EA8D /* CsvConfig.cpp in Sources */,
@@ -995,6 +1010,7 @@
 				E2F993711C7F2BB500951CDE /* BattleBaseData.cpp in Sources */,
 				E23F681D1C1ADA14001EEB03 /* LoadingBattleView.cpp in Sources */,
 				E2E06E181C75DE380028822A /* CsvReader.cpp in Sources */,
+				E25AA9071C892C8200584B5A /* XYRichText.cpp in Sources */,
 				E218F3001C876132000E9479 /* ObstacleContainer.cpp in Sources */,
 				E23F68231C1ADA14001EEB03 /* LoadingScene.cpp in Sources */,
 				E2F9937D1C807A1B00951CDE /* MapSprite.cpp in Sources */,
